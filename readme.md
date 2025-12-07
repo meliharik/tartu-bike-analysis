@@ -100,14 +100,14 @@ Real-world data from Tartu Smart Bike system collected in July 2019.
 
 ## ✅ Project Status
 
-**Current Phase**: Data Preprocessing ✓ Complete
-**Next Phase**: Exploratory Data Analysis (In Planning)
+**Current Phase**: Exploratory Data Analysis ✓ Complete
+**Next Phase**: Advanced Visualizations & Statistical Analysis
 
 ### Timeline
 
 - ✅ **Phase 1** (Completed): Data Collection & Preprocessing
-- 🔄 **Phase 2** (Next): Exploratory Data Analysis
-- 📅 **Phase 3** (Planned): Visualization & Statistical Analysis
+- ✅ **Phase 2** (Completed): Exploratory Data Analysis
+- 🔄 **Phase 3** (In Progress): Advanced Visualizations & Statistical Analysis
 - 📅 **Phase 4** (Planned): Machine Learning & Predictive Modeling
 
 ---
@@ -402,90 +402,93 @@ Recording interval:     ~5 seconds
 
 ---
 
+### 10. Exploratory Data Analysis (EDA) ✓
+
+**Modular Analysis Architecture**:
+- Created `analysis/` package with modular design
+- Separated concerns: temporal, spatial, utilities
+- Reusable plotting and reporting functions
+- Centralized configuration management
+
+**Temporal Analysis**:
+- ✅ Hourly usage patterns (peak: 17:00 with 1,639 trips)
+- ✅ Day-of-week patterns (Thursday busiest: 10,320 trips)
+- ✅ Weekend vs weekday comparison
+- ✅ Time period analysis (Morning/Afternoon/Evening/Night)
+- ✅ Generated visualizations: `hourly_pattern.png`, `daily_pattern.png`, `weekend_comparison.png`
+
+**Spatial Analysis**:
+- ✅ Popular stations ranking (Uueturu: 1,176 start trips)
+- ✅ Trip type analysis (11.9% round trips, 88.1% one-way)
+- ✅ Popular routes identification (top OD pairs)
+- ✅ Generated visualizations: `top_stations.png`, `top_routes.png`
+
+**Created Scripts**:
+- `scripts/02_run_eda.py` - Main EDA orchestrator
+- `scripts/analysis/temporal_analysis.py` - Time-based analyses
+- `scripts/analysis/spatial_analysis.py` - Location-based analyses
+- `scripts/analysis/data_loader.py` - Data loading utilities
+- `scripts/analysis/utils/plotting.py` - Visualization helpers
+- `scripts/analysis/utils/reporting.py` - Report generation
+
+**Generated Outputs**:
+- ✅ EDA Report: `reports/eda_report.md`
+- ✅ 9+ visualizations in `visualizations/` subdirectories
+- ✅ Time series charts (hourly, daily, weekend patterns)
+- ✅ Statistical charts (stations, routes, distributions)
+- ✅ Distribution plots (duration, distance, correlations)
+
+**Key Insights Discovered**:
+- Peak usage at 17:00 (evening commute)
+- Uueturu is the most popular station (hub location)
+- 88% of trips are one-way (commuter pattern)
+- Afternoon period has highest trip count (7,570 trips)
+- Evening trips are longest on average (24.51 minutes)
+
+---
+
 ## 🚀 Future Work
 
-### Phase 2: Exploratory Data Analysis (EDA)
+### Phase 3: Advanced Visualizations & Statistical Analysis
 
-**Planned Analyses**:
+**Planned Enhancements**:
 
-1. **Temporal Analysis**:
-   - Hourly usage patterns
-   - Daily trends
-   - Weekday vs weekend comparison
-   - Peak hours identification
-   - Seasonal patterns (if more data available)
+1. **Enhanced Visualizations**:
+   - Interactive maps with folium (station heatmaps, route flows)
+   - GPS trajectory visualization
+   - Origin-Destination flow maps
+   - Service area coverage maps
+   - Real-time style interactive dashboards
 
-2. **Spatial Analysis**:
-   - Station popularity ranking
-   - Origin-Destination (OD) matrix
-   - Geographic distribution of trips
-   - Route clustering
-   - Service area coverage
+2. **Statistical Analysis**:
+   - Correlation analysis (duration vs distance, time vs usage)
+   - Hypothesis testing (usage pattern differences)
+   - Distribution fitting (trip duration, distance)
+   - Outlier detection and analysis
+   - Statistical significance tests
 
-3. **User Behavior Analysis**:
-   - Membership type comparison
-   - Trip duration distribution
-   - Trip distance distribution
-   - Return vs one-way trips
-   - Multi-modal analysis
+3. **User Behavior Deep Dive**:
+   - Membership type comparison (detailed analysis)
+   - User segmentation analysis
+   - Trip duration/distance distributions by user type
+   - Bike type performance comparison (Regular vs Pedelec)
+   - Cost analysis and pricing patterns
 
-4. **Bike Utilization**:
+4. **Bike Utilization Analysis**:
    - Individual bike usage frequency
-   - Bike type performance comparison
-   - Maintenance indicators
    - Fleet efficiency metrics
+   - Maintenance indicators
+   - Bike turnover rates
+   - Station capacity analysis
 
 **Deliverables**:
-- Python script: `02_exploratory_analysis.py`
-- Jupyter notebook: `EDA.ipynb`
-- Analysis report: `eda_report.md`
-
----
-
-### Phase 3: Visualizations and Statistical Analysis
-
-**Planned Visualizations**:
-
-1. **Time Series Plots**:
-   - Hourly trip counts
-   - Daily trip trends
-   - Duration distributions
-   - Distance distributions
-
-2. **Geographic Visualizations**:
-   - Interactive maps (using folium)
-   - Station heatmaps
-   - Route flow maps
-   - Popular area identification
-   - GPS trajectory plots
-
-3. **Statistical Charts**:
-   - Correlation matrices
-   - Box plots (membership types, bike types)
-   - Scatter plots (duration vs distance)
-   - Histogram overlays
-   - Violin plots
-
-4. **Comparative Analysis**:
-   - Weekday vs weekend
-   - Peak vs off-peak
-   - Membership type comparisons
-   - Bike type performance
-
-**Statistical Tests**:
-- Hypothesis testing (usage patterns)
-- Correlation analysis
-- Distribution fitting
-- Outlier detection
-- Significance testing
-
-**Deliverables**:
-- Python script: `03_visualization.py`
+- Enhanced visualization scripts
 - Interactive HTML maps
-- Static charts (PNG/PDF)
 - Statistical analysis report
+- User behavior insights document
 
 ---
+
 
 ### Phase 4: Machine Learning and Predictive Modeling
 
@@ -606,6 +609,45 @@ After running, check `processed_data/` folder:
 - ✓ `routes_columns.txt`
 - ✓ `locations_columns.txt`
 
+### Running the Exploratory Data Analysis
+
+```bash
+# Run the EDA script
+python3 scripts/02_run_eda.py
+```
+
+**Expected output**:
+```
+================================================================================
+TARTU BIKE DATA - EXPLORATORY DATA ANALYSIS
+================================================================================
+
+[Setup]
+[Data Loading]
+  ✓ Routes loaded: 19,307 records
+  ✓ Locations loaded: 1,525,424 GPS points
+[Temporal Analysis]
+  • Analyzing hourly patterns...
+  • Analyzing daily patterns...
+  • Comparing weekday vs weekend...
+  • Analyzing time periods...
+  ✓ Temporal analysis complete
+[Spatial Analysis]
+  • Analyzing popular stations...
+  • Analyzing trip types...
+  • Analyzing popular routes...
+  ✓ Spatial analysis complete
+[Saving Report]
+  ✓ Report saved: reports/eda_report.md
+
+EXPLORATORY DATA ANALYSIS COMPLETED!
+```
+
+**Generated Outputs**:
+- ✓ EDA Report: `reports/eda_report.md`
+- ✓ Visualizations in `visualizations/` subdirectories
+- ✓ Time series charts, statistical charts, distribution plots
+
 ### Using Cleaned Data in Python
 
 ```python
@@ -622,6 +664,22 @@ print(locations.head())
 # Example analysis: Average trip duration by hour
 hourly_avg = routes.groupby('unlock_hour')['duration_minutes_calculated'].mean()
 print(hourly_avg)
+```
+
+### Using the Analysis Package
+
+```python
+from analysis.data_loader import load_routes_data, load_locations_data
+from analysis.temporal_analysis import analyze_hourly_patterns
+from analysis.spatial_analysis import analyze_popular_stations
+
+# Load data using the package
+routes = load_routes_data()
+locations = load_locations_data()
+
+# Run specific analyses
+hourly_data, peak_hour, viz_files, report_lines = analyze_hourly_patterns(routes)
+top_start, top_end, viz_files, report_lines = analyze_popular_stations(routes)
 ```
 
 ### Using Jupyter Notebooks (Interactive Analysis)
@@ -662,29 +720,51 @@ tartu-bike-analysis/
 │
 ├── scripts/                           # Python scripts
 │   ├── 01_data_preprocessing.py       # Data cleaning pipeline
-│   ├── 02_exploratory_analysis.py     # EDA (planned)
-│   ├── 03_visualization.py            # Visualizations (planned)
-│   └── 04_machine_learning.py         # ML models (planned)
+│   ├── 02_run_eda.py                  # EDA orchestrator
+│   ├── 03_visualization.py            # Advanced visualizations (planned)
+│   ├── 04_machine_learning.py         # ML models (planned)
+│   └── analysis/                      # Modular analysis package
+│       ├── __init__.py                # Package initialization
+│       ├── config.py                  # Configuration & constants
+│       ├── data_loader.py             # Data loading utilities
+│       ├── temporal_analysis.py      # Time-based analyses
+│       ├── spatial_analysis.py        # Location-based analyses
+│       └── utils/                      # Utility modules
+│           ├── plotting.py            # Visualization helpers
+│           └── reporting.py           # Report generation
 │
 ├── notebooks/                         # Jupyter notebooks (planned)
 │   ├── EDA.ipynb                      # Exploratory analysis
 │   ├── Visualizations.ipynb           # Chart creation
 │   └── ML_Models.ipynb                # Model building
 │
-├── visualizations/                    # Generated charts (planned)
+├── visualizations/                    # Generated charts
 │   ├── time_series/                   # Time-based plots
+│   │   ├── hourly_pattern.png         # Hourly usage patterns
+│   │   ├── daily_pattern.png          # Day-of-week patterns
+│   │   └── weekend_comparison.png     # Weekday vs weekend
 │   ├── maps/                          # Geographic visualizations
-│   └── statistical/                   # Statistical charts
+│   │   └── gps_density_heatmap.png   # GPS density map
+│   ├── statistical/                   # Statistical charts
+│   │   ├── top_stations.png          # Popular stations
+│   │   ├── top_routes.png            # Popular routes
+│   │   ├── bike_type_comparison.png  # Bike type analysis
+│   │   ├── membership_types.png      # Membership analysis
+│   │   ├── correlation_matrix.png    # Feature correlations
+│   │   └── cost_distribution.png     # Cost analysis
+│   └── distributions/                 # Distribution plots
+│       ├── trip_distributions.png     # Trip metrics
+│       └── duration_vs_distance.png  # Scatter analysis
 │
 ├── models/                            # Trained ML models (planned)
 │   ├── demand_prediction/
 │   ├── clustering/
 │   └── anomaly_detection/
 │
-├── reports/                           # Analysis reports (planned)
-│   ├── eda_report.md
-│   ├── statistical_analysis.md
-│   └── ml_results.md
+├── reports/                           # Analysis reports
+│   ├── eda_report.md                  # EDA findings (✓ Complete)
+│   ├── statistical_analysis.md       # Statistical analysis (planned)
+│   └── ml_results.md                  # ML results (planned)
 │
 ├── .gitignore                         # Git ignore rules
 ├── requirements.txt                   # Python dependencies
@@ -745,13 +825,44 @@ tartu-bike-analysis/
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### Planned Pipeline Extensions
+### Current Pipeline (Including EDA)
 
 ```
-CLEANED DATA → EDA → VISUALIZATIONS → ML MODELS → INSIGHTS
-     ↓           ↓          ↓              ↓           ↓
-  Quality    Statistics   Charts      Predictions  Decisions
-  Reports    Analysis     Maps        Clusters     Recommendations
+┌─────────────────────────────────────────────────────────────────┐
+│                   CLEANED DATA                                  │
+│  • routes_cleaned.csv (19,307 records, 25 columns)              │
+│  • locations_cleaned.csv (1,525,424 records, 11 columns)        │
+│  • Quality reports generated                                    │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────────┐
+│              EXPLORATORY DATA ANALYSIS (EDA)                    │
+│  Temporal Analysis:          Spatial Analysis:                   │
+│  • Hourly patterns          • Station popularity                │
+│  • Daily patterns           • Route analysis                    │
+│  • Weekend comparison       • Trip type classification          │
+│  • Time period analysis     • OD matrix                         │
+│  Output: Visualizations + EDA Report                           │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────────┐
+│              VISUALIZATIONS & STATISTICAL ANALYSIS              │
+│  • Interactive maps (folium)                                    │
+│  • Advanced statistical charts                                  │
+│  • Correlation analysis                                         │
+│  • Distribution fitting                                         │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────────┐
+│              MACHINE LEARNING & PREDICTIVE MODELING             │
+│  • Demand prediction                                           │
+│  • Route clustering                                            │
+│  • User segmentation                                           │
+│  • Anomaly detection                                           │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -802,6 +913,27 @@ CLEANED DATA → EDA → VISUALIZATIONS → ML MODELS → INSIGHTS
 - All trips have GPS trajectories
 - All required fields present
 - Membership and payment info available
+
+### 5. Exploratory Data Analysis Findings
+
+**Temporal Patterns**:
+- **Peak hour**: 17:00 (1,639 trips) - Evening commute
+- **Quietest hour**: 5:00 (159 trips) - Early morning
+- **Busiest day**: Thursday (10,320 trips)
+- **Average trips/hour**: 965.4 trips
+- **Time period distribution**: Afternoon (7,570), Evening (5,679), Morning (3,225), Night (2,833)
+
+**Spatial Patterns**:
+- **Most popular station**: Uueturu (1,176 start trips, 1,146 end trips)
+- **Top 5 stations**: Uueturu, Soola, Eeden, Pirogovi plats, Vabadussild
+- **Trip types**: 88.1% one-way trips, 11.9% round trips
+- **Most popular route**: Veeriku → Kannikese (60 trips)
+
+**Usage Characteristics**:
+- Evening trips are longest (avg 24.51 minutes)
+- Morning trips are shortest (avg 15.80 minutes)
+- Afternoon has highest trip volume
+- Night trips have longest average distance (3.33 km)
 
 ---
 
@@ -897,8 +1029,8 @@ For questions, suggestions, or collaboration opportunities, please open an issue
 ---
 
 **Last Updated**: December 7, 2024
-**Project Status**: Phase 1 Complete, Phase 2 Starting
-**Next Milestone**: Complete Exploratory Data Analysis
+**Project Status**: Phase 1 & 2 Complete, Phase 3 In Progress
+**Next Milestone**: Advanced Visualizations & Statistical Analysis
 
 ---
 
