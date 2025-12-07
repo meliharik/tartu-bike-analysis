@@ -1,3 +1,19 @@
 .ipynb_checkpoints
 __pycache__
 *.pyc
+
+# Documentation
+GUIDE.md
+HOW_TO_RUN.md
+
+# Processed data (too large for GitHub)
+processed_data/
+
+# Visualizations
+visualizations/
+
+# Models
+models/
+
+# Notebooks checkpoints
+notebooks/.ipynb_checkpoints/
