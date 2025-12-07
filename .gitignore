@@ -17,3 +17,6 @@ models/
 
 # Notebooks checkpoints
 notebooks/.ipynb_checkpoints/
+
+.claude
+
