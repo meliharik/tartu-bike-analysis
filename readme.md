@@ -87,6 +87,36 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 
 ---
 
+### Phase 3: Statistical Analysis ✓
+
+**What We Did**:
+- Hypothesis testing (t-tests, ANOVA)
+- User segmentation analysis (3 segments)
+- Distribution comparisons (violin plots)
+- Advanced statistical visualizations
+
+**Key Findings**:
+
+**Hypothesis Tests**:
+- Bike type differences: **Significant** (p < 0.0001)
+  - Pedelec: 23.76 min, 3.24 km (longer, farther)
+  - Regular: 14.60 min, 1.92 km (shorter, closer)
+- Time period differences: **Significant** (p < 0.0001)
+  - Duration and distance vary across Morning/Afternoon/Evening/Night
+
+**User Segmentation**:
+- Heavy users: 88.5% (456 bikes) - most bikes heavily used
+- Regular users: 8.2% (42 bikes)
+- Occasional users: 3.3% (17 bikes)
+- System dominated by frequent users
+
+**Statistical Insights**:
+- Electric bikes (Pedelec) used 63% longer than regular bikes
+- Clear usage pattern differences across time periods
+- User base highly engaged (88.5% heavy users)
+
+---
+
 ## 🏗️ Technical Architecture
 
 ### Modular Design
@@ -96,12 +126,13 @@ We implemented a **modular architecture** for maintainability and scalability:
 ```
 scripts/
 ├── 01_data_preprocessing.py    # Data cleaning pipeline (415 lines)
-├── 02_run_eda.py               # EDA orchestrator (96 lines)
+├── 02_run_eda.py               # EDA orchestrator (100 lines)
 └── analysis/                    # Modular analysis package
     ├── config.py                # Configuration & constants
     ├── data_loader.py           # Data loading utilities
     ├── temporal_analysis.py     # Time-based analysis
     ├── spatial_analysis.py      # Location-based analysis
+    ├── statistical_analysis.py  # Statistical testing & segmentation
     └── utils/
         ├── plotting.py          # Reusable plotting functions
         └── reporting.py         # Report generation
@@ -125,7 +156,7 @@ tartu-bike-analysis/
 │   ├── 01_data_preprocessing.py
 │   ├── 02_run_eda.py
 │   └── analysis/               # Modular analysis package
-├── visualizations/             # Generated charts (12 PNG files)
+├── visualizations/             # Generated charts (14 PNG files)
 │   ├── time_series/
 │   ├── statistical/
 │   ├── distributions/
@@ -155,7 +186,7 @@ pip3 install -r requirements.txt
 # Step 1: Clean and prepare data
 python3 scripts/01_data_preprocessing.py
 
-# Step 2: Run exploratory analysis
+# Step 2: Run exploratory & statistical analysis
 python3 scripts/02_run_eda.py
 ```
 
@@ -163,8 +194,8 @@ python3 scripts/02_run_eda.py
 
 After running scripts:
 - `processed_data/`: 2 cleaned CSV files + quality reports
-- `visualizations/`: 12 high-resolution charts (300 DPI)
-- `reports/eda_report.md`: Complete analysis report
+- `visualizations/`: 14 high-resolution charts (300 DPI)
+- `reports/eda_report.md`: Complete analysis report with statistical tests
 
 ---
 
@@ -209,13 +240,15 @@ After running scripts:
 - Daily trip patterns (by weekday)
 - Weekend vs weekday comparison
 
-**Statistical** (6 charts):
+**Statistical** (8 charts):
 - Top 10 start/end stations
 - Top 10 popular routes
 - Membership type distribution
 - Bike type comparison
 - Cost distribution
 - Correlation matrix
+- User segmentation (4 sub-charts)
+- Distribution comparisons (4 violin plots)
 
 **Distributions** (2 charts):
 - Trip duration/distance histograms + boxplots
@@ -237,11 +270,12 @@ After running scripts:
 
 ## 🎓 Project Status
 
-**Current**: Phase 2 Complete (Exploratory Data Analysis)
+**Current**: Phase 3 Complete (Statistical Analysis)
 
 **Completed Phases**:
 1. ✅ Data Preprocessing - Cleaning and feature engineering
 2. ✅ Exploratory Data Analysis - Patterns and visualizations
+3. ✅ Statistical Analysis - Hypothesis testing and segmentation
 
 **What's Next**:
 - Advanced visualizations (interactive maps, animations)

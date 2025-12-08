@@ -1,6 +1,6 @@
 # Tartu Bike Data - Exploratory Data Analysis Report
 
-**Generated**: 2025-12-07 23:50:30
+**Generated**: 2025-12-08 09:32:27
 
 
 ---
@@ -127,5 +127,90 @@ Night              2833               23.85               3.33
 4. Aparaaditehas → Uueturu: 43 trips
 
 5. Pirogovi plats → Uueturu: 42 trips
+
+
+
+
+## Statistical Analysis
+
+
+### Weekend vs Weekday Comparison
+
+Note: No weekend data available for comparison
+
+
+
+
+### Bike Type Comparison
+
+**Comparing**: Pedelec vs Bike
+
+
+
+**Duration:**
+
+- Pedelec mean: 23.76 minutes
+
+- Bike mean: 14.60 minutes
+
+- p-value: 0.0000
+
+- Significant difference: Yes
+
+
+
+**Distance:**
+
+- Pedelec mean: 3.24 km
+
+- Bike mean: 1.92 km
+
+- p-value: 0.0000
+
+- Significant difference: Yes
+
+
+
+
+### Time Period Comparison (ANOVA)
+
+**Time Periods Tested**: Night, Morning, Afternoon, Evening
+
+
+
+**Duration ANOVA:**
+
+- F-statistic: 63.14
+
+- p-value: 0.0000
+
+- Significant difference: Yes
+
+
+
+**Distance ANOVA:**
+
+- F-statistic: 49.19
+
+- p-value: 0.0000
+
+- Significant difference: Yes
+
+
+
+
+### User Segmentation Analysis
+
+**Total Users Analyzed**: 515
+
+
+
+**Segment Distribution**:
+
+- Heavy: 456 users (88.5%)
+
+- Regular: 42 users (8.2%)
+
+- Occasional: 17 users (3.3%)
 
 

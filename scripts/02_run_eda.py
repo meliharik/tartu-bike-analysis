@@ -16,6 +16,7 @@ from analysis import config
 from analysis.data_loader import load_routes_data, load_locations_data, get_data_summary
 from analysis.temporal_analysis import run_temporal_analysis
 from analysis.spatial_analysis import run_spatial_analysis
+from analysis.statistical_analysis import run_statistical_analysis
 from analysis.utils.plotting import setup_plot_style
 from analysis.utils.reporting import MarkdownReport
 
@@ -69,6 +70,10 @@ all_results['temporal'] = temporal_results
 # Spatial Analysis
 spatial_results = run_spatial_analysis(routes, report)
 all_results['spatial'] = spatial_results
+
+# Statistical Analysis
+statistical_results = run_statistical_analysis(routes, report)
+all_results['statistical'] = statistical_results
 
 # Save report
 print("\n[Saving Report]")
