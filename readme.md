@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-PEP8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Live Gallery](https://img.shields.io/badge/Live%20Gallery-View%20site-7e5bef?logo=google-chrome&logoColor=white)](https://meliharik.github.io/tartu-bike-analysis/)
 
 Comprehensive data analysis of Tartu bike-sharing system using real-world GPS and trip data from July 2019.
 
@@ -16,8 +17,9 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 
 ### 🌐 Live Gallery (GitHub Pages)
 
-- Interactive + static outputs are published at `https://meliharik.github.io/tartu-bike-analysis/`.
-- The page pulls assets directly from `visualizations/` and links to `reports/eda_report.md`.
+- **Site:** https://meliharik.github.io/tartu-bike-analysis/
+- Interactive and static outputs are published via GitHub Pages (`main` → `/docs`).
+- The site uses images from the `visualizations/` folder and links to `reports/eda_report.md`.
 
 ### Research Questions
 
