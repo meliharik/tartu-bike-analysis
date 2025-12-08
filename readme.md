@@ -1,7 +1,7 @@
 # Tartu Smart Bike Mobility Analysis
 
 [![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/status-complete-success.svg)](https://github.com/yourusername/tartu-bike-analysis)
+[![Status](https://img.shields.io/badge/status-complete-success.svg)](https://github.com/meliharik/tartu-bike-analysis)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-PEP8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)

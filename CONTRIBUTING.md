@@ -24,7 +24,7 @@ This is a comprehensive data analysis project for the Tartu Smart Bike system, c
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tartu-bike-analysis.git
+git clone https://github.com/meliharik/tartu-bike-analysis.git
 cd tartu-bike-analysis
 
 # Install dependencies
