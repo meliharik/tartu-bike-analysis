@@ -74,6 +74,8 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 - Quietest hour: 5:00 (159 trips)
 - Time periods: Afternoon most popular (7,570 trips)
 
+![Hourly Trip Patterns](visualizations/time_series/hourly_pattern.png)
+
 **Spatial Patterns**:
 - Most popular station: Uueturu (1,176 starts, 1,146 ends)
 - Round trips: 11.9% (2,288 trips)
@@ -84,6 +86,8 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 - Duration vs Distance: 0.489 (moderate positive)
 - Trip characteristics vary by time period
 - Station usage highly concentrated (top 10 stations)
+
+![Top Stations and Routes](visualizations/statistical/top_stations.png)
 
 ---
 
@@ -115,6 +119,45 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 - Clear usage pattern differences across time periods
 - User base highly engaged (88.5% heavy users)
 
+![User Segmentation](visualizations/statistical/user_segmentation.png)
+
+---
+
+### Phase 4: Machine Learning ✓
+
+**What We Did**:
+- Hourly demand prediction (time series forecasting)
+- User behavior clustering (K-means, 3 clusters)
+- Route clustering analysis (5 clusters, 1,256 OD pairs)
+- Anomaly detection (Isolation Forest)
+- 4 ML visualizations with evaluation metrics
+
+**Key Findings**:
+
+**Demand Prediction**:
+- Peak prediction: 17:00 (1,639 trips predicted)
+- Model: Moving average baseline with historical patterns
+- Predicts hourly demand based on time of day
+
+**User Behavior Clusters**:
+- Cluster 0: 233 bikes - 37.9 trips avg, 16.3 min, 2.66 km
+- Cluster 1: 74 bikes - 37.7 trips avg, 33.9 min, 3.70 km (long-distance users)
+- Cluster 2: 208 bikes - 52.6 trips avg, 22.8 min, 3.30 km (high-frequency users)
+
+**Route Patterns**:
+- 5 distinct route clusters identified from 1,256 OD pairs
+- Cluster 4: High-traffic routes (62.5 trips/route avg, 2.84 km)
+- Cluster 0: Popular medium routes (23.7 trips/route, 2.21 km)
+
+**Anomaly Detection**:
+- 966 anomalies detected (5% of trips)
+- Anomaly characteristics: 84.4 min avg (vs 18.9 normal), 7.58 km (vs 2.77 normal)
+- Most anomalies during night hours (0:00)
+
+![ML Analysis](visualizations/ml/user_behavior_clustering.png)
+
+![Anomaly Detection](visualizations/ml/anomaly_detection.png)
+
 ---
 
 ## 🏗️ Technical Architecture
@@ -126,13 +169,14 @@ We implemented a **modular architecture** for maintainability and scalability:
 ```
 scripts/
 ├── 01_data_preprocessing.py    # Data cleaning pipeline (415 lines)
-├── 02_run_eda.py               # EDA orchestrator (100 lines)
+├── 02_run_eda.py               # EDA orchestrator (110 lines)
 └── analysis/                    # Modular analysis package
     ├── config.py                # Configuration & constants
     ├── data_loader.py           # Data loading utilities
     ├── temporal_analysis.py     # Time-based analysis
     ├── spatial_analysis.py      # Location-based analysis
     ├── statistical_analysis.py  # Statistical testing & segmentation
+    ├── ml_models.py             # Machine learning models
     └── utils/
         ├── plotting.py          # Reusable plotting functions
         └── reporting.py         # Report generation
@@ -156,11 +200,12 @@ tartu-bike-analysis/
 │   ├── 01_data_preprocessing.py
 │   ├── 02_run_eda.py
 │   └── analysis/               # Modular analysis package
-├── visualizations/             # Generated charts (14 PNG files)
+├── visualizations/             # Generated charts (18 PNG files)
 │   ├── time_series/
 │   ├── statistical/
 │   ├── distributions/
-│   └── maps/
+│   ├── maps/
+│   └── ml/
 ├── reports/
 │   └── eda_report.md           # Comprehensive analysis report
 ├── requirements.txt            # Python dependencies
@@ -186,7 +231,7 @@ pip3 install -r requirements.txt
 # Step 1: Clean and prepare data
 python3 scripts/01_data_preprocessing.py
 
-# Step 2: Run exploratory & statistical analysis
+# Step 2: Run complete analysis (EDA, Statistical, ML)
 python3 scripts/02_run_eda.py
 ```
 
@@ -194,8 +239,8 @@ python3 scripts/02_run_eda.py
 
 After running scripts:
 - `processed_data/`: 2 cleaned CSV files + quality reports
-- `visualizations/`: 14 high-resolution charts (300 DPI)
-- `reports/eda_report.md`: Complete analysis report with statistical tests
+- `visualizations/`: 18 high-resolution charts (300 DPI)
+- `reports/eda_report.md`: Complete analysis report with ML models
 
 ---
 
@@ -228,8 +273,8 @@ After running scripts:
 | numpy | Numerical computing |
 | matplotlib | Visualization |
 | seaborn | Statistical plots |
-| scikit-learn | Machine learning (future) |
-| folium | Interactive maps (future) |
+| scikit-learn | Machine learning & clustering |
+| scipy | Statistical testing |
 
 ---
 
@@ -257,6 +302,12 @@ After running scripts:
 **Maps** (1 chart):
 - GPS density heatmap (Tartu area)
 
+**Machine Learning** (4 charts):
+- Hourly demand prediction
+- User behavior clustering (3 clusters)
+- Route clustering analysis (5 clusters)
+- Anomaly detection (5% outliers)
+
 ---
 
 ## 📄 Documentation
@@ -270,18 +321,19 @@ After running scripts:
 
 ## 🎓 Project Status
 
-**Current**: Phase 3 Complete (Statistical Analysis)
+**Current**: Phase 4 Complete (Machine Learning)
 
 **Completed Phases**:
 1. ✅ Data Preprocessing - Cleaning and feature engineering
 2. ✅ Exploratory Data Analysis - Patterns and visualizations
 3. ✅ Statistical Analysis - Hypothesis testing and segmentation
+4. ✅ Machine Learning - Prediction, clustering, anomaly detection
 
-**What's Next**:
+**Potential Future Work**:
 - Advanced visualizations (interactive maps, animations)
-- Statistical testing and correlations
-- Machine learning models (demand prediction, clustering)
-- User segmentation analysis
+- Deep learning models (LSTM for time series)
+- Real-time prediction dashboard
+- Geospatial network analysis
 
 ---
 

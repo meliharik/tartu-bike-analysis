@@ -1,6 +1,6 @@
 # Tartu Bike Data - Exploratory Data Analysis Report
 
-**Generated**: 2025-12-08 09:32:27
+**Generated**: 2025-12-08 09:43:24
 
 
 ---
@@ -214,3 +214,142 @@ Note: No weekend data available for comparison
 - Occasional: 17 users (3.3%)
 
 
+
+
+## Machine Learning Analysis
+
+
+### Demand Prediction
+
+**Predicted Peak Hour**: 17:00
+
+**Predicted Peak Demand**: 1532 trips
+
+**Average Hourly Demand**: 803 trips
+
+
+
+
+### User Behavior Clustering
+
+**Number of Clusters**: 3
+
+**Silhouette Score**: 0.307 (higher is better)
+
+**Davies-Bouldin Index**: 1.347 (lower is better)
+
+
+
+**Cluster 0**:
+
+- Users: 233
+
+- Avg trips: 23.9
+
+- Avg duration: 16.6 min
+
+- Avg distance: 2.27 km
+
+
+
+**Cluster 1**:
+
+- Users: 74
+
+- Avg trips: 37.7
+
+- Avg duration: 33.9 min
+
+- Avg distance: 3.70 km
+
+
+
+**Cluster 2**:
+
+- Users: 208
+
+- Avg trips: 52.6
+
+- Avg duration: 22.8 min
+
+- Avg distance: 3.30 km
+
+
+
+
+### Route Clustering
+
+**Number of Clusters**: 5
+
+**Total OD Pairs Analyzed**: 1256
+
+
+
+**Cluster 0**:
+
+- Routes: 185
+
+- Avg trips/route: 23.7
+
+- Avg distance: 2.21 km
+
+
+
+**Cluster 1**:
+
+- Routes: 387
+
+- Avg trips/route: 7.9
+
+- Avg distance: 4.36 km
+
+
+
+**Cluster 2**:
+
+- Routes: 626
+
+- Avg trips/route: 8.5
+
+- Avg distance: 2.07 km
+
+
+
+**Cluster 3**:
+
+- Routes: 38
+
+- Avg trips/route: 8.1
+
+- Avg distance: 4.83 km
+
+
+
+**Cluster 4**:
+
+- Routes: 20
+
+- Avg trips/route: 62.5
+
+- Avg distance: 2.84 km
+
+
+
+
+### Anomaly Detection
+
+**Total Trips**: 19,307
+
+**Anomalies Detected**: 966 (5.00%)
+
+**Normal Trips**: 18,341 (95.00%)
+
+
+
+**Anomaly Characteristics**:
+
+- Avg duration: 84.4 min (vs 18.9 normal)
+
+- Avg distance: 7.58 km (vs 2.77 normal)
+
+- Most anomalies at hour: 0:00

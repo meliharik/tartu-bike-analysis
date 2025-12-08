@@ -19,6 +19,7 @@ VIZ_TIME_SERIES = os.path.join(VIZ_DIR, 'time_series')
 VIZ_STATISTICAL = os.path.join(VIZ_DIR, 'statistical')
 VIZ_DISTRIBUTIONS = os.path.join(VIZ_DIR, 'distributions')
 VIZ_MAPS = os.path.join(VIZ_DIR, 'maps')
+VIZ_ML = os.path.join(VIZ_DIR, 'ml')
 
 # Plot settings
 PLOT_DPI = 300
@@ -60,6 +61,7 @@ def ensure_directories():
         VIZ_STATISTICAL,
         VIZ_DISTRIBUTIONS,
         VIZ_MAPS,
+        VIZ_ML,
         REPORTS_DIR
     ]
     for directory in directories:
