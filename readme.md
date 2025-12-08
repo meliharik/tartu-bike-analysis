@@ -189,6 +189,42 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 
 ---
 
+### Phase 6: Network Analysis ✓
+
+**What We Did**:
+- Built directed station network graph with NetworkX
+- Calculated 7 centrality metrics (degree, betweenness, closeness, PageRank, eigenvector)
+- Detected communities using Louvain algorithm
+- Analyzed shortest paths between top stations
+- Created 3 network visualizations
+
+**Key Findings**:
+
+**Network Structure**:
+- 73 stations (nodes), 3,520 routes (edges)
+- Network density: 0.6618 (highly connected)
+- Weakly connected network
+- Average shortest path: 1.34 hops
+
+**Centrality Analysis**:
+- Top station by PageRank: Uueturu (highest importance)
+- High betweenness centrality stations serve as hubs
+- Degree centrality identifies busiest stations
+
+**Community Detection**:
+- Detected distinct station communities
+- Modularity score indicates natural groupings
+- Communities represent geographic clusters
+
+**Network Insights**:
+- Well-connected system with short paths between stations
+- Central stations play crucial role in network flow
+- Community structure reveals natural usage patterns
+
+![Station Network](visualizations/statistical/station_network.png)
+
+---
+
 ## 🏗️ Technical Architecture
 
 ### Modular Design
@@ -198,7 +234,7 @@ We implemented a **modular architecture** for maintainability and scalability:
 ```
 scripts/
 ├── 01_data_preprocessing.py    # Data cleaning pipeline (415 lines)
-├── 02_run_eda.py               # EDA orchestrator (115 lines)
+├── 02_run_eda.py               # EDA orchestrator (120 lines)
 └── analysis/                    # Modular analysis package
     ├── config.py                # Configuration & constants
     ├── data_loader.py           # Data loading utilities
@@ -207,6 +243,7 @@ scripts/
     ├── statistical_analysis.py  # Statistical testing & segmentation
     ├── ml_models.py             # Machine learning models
     ├── interactive_viz.py       # Interactive visualizations
+    ├── network_analysis.py      # Network analysis with NetworkX
     └── utils/
         ├── plotting.py          # Reusable plotting functions
         └── reporting.py         # Report generation
@@ -262,7 +299,7 @@ pip3 install -r requirements.txt
 # Step 1: Clean and prepare data
 python3 scripts/01_data_preprocessing.py
 
-# Step 2: Run complete analysis (EDA, Statistical, ML, Interactive)
+# Step 2: Run complete analysis (EDA, Statistical, ML, Interactive, Network)
 python3 scripts/02_run_eda.py
 
 # Step 3 (Optional): Launch interactive dashboard
@@ -313,6 +350,7 @@ After running scripts:
 | folium | Interactive maps |
 | plotly | Interactive charts |
 | streamlit | Web dashboard |
+| networkx | Network analysis & graph theory |
 
 ---
 
@@ -358,6 +396,11 @@ After running scripts:
 - 4 analysis tabs with interactive charts
 - Responsive web interface
 
+**Network Analysis** (3 charts):
+- Station network graph (nodes & edges)
+- Centrality metrics comparison (4 measures)
+- Community distribution
+
 ---
 
 ## 📄 Documentation
@@ -371,7 +414,7 @@ After running scripts:
 
 ## 🎓 Project Status
 
-**Current**: Phase 5 Complete (Interactive Visualizations & Dashboard)
+**Current**: Phase 6 Complete (Network Analysis)
 
 **Completed Phases**:
 1. ✅ Data Preprocessing - Cleaning and feature engineering
@@ -379,12 +422,13 @@ After running scripts:
 3. ✅ Statistical Analysis - Hypothesis testing and segmentation
 4. ✅ Machine Learning - Prediction, clustering, anomaly detection
 5. ✅ Interactive Visualizations - Maps, charts, and web dashboard
+6. ✅ Network Analysis - Graph theory, centrality, communities
 
 **Potential Future Work**:
 - Deep learning models (LSTM for time series)
 - Real-time data streaming and predictions
-- Geospatial network analysis (NetworkX)
-- Mobile-responsive dashboard enhancements
+- Advanced geospatial analysis (Voronoi diagrams, service areas)
+- Bike rebalancing optimization algorithms
 
 ---
 

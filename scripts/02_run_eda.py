@@ -19,6 +19,7 @@ from analysis.spatial_analysis import run_spatial_analysis
 from analysis.statistical_analysis import run_statistical_analysis
 from analysis.ml_models import run_ml_analysis
 from analysis.interactive_viz import run_interactive_visualizations
+from analysis.network_analysis import run_network_analysis
 from analysis.utils.plotting import setup_plot_style
 from analysis.utils.reporting import MarkdownReport
 
@@ -85,6 +86,10 @@ all_results['ml'] = ml_results
 interactive_results = run_interactive_visualizations(routes, locations, report)
 all_results['interactive'] = interactive_results
 
+# Network Analysis
+network_results = run_network_analysis(routes, report)
+all_results['network'] = network_results
+
 # Save report
 print("\n[Saving Report]")
 print("-" * 80)
@@ -105,6 +110,8 @@ print(f"  • Most popular station: {spatial_results['stations']['top_start'].in
 print(f"  • Round trip percentage: {spatial_results['trip_types']['round_trip_pct']:.1f}%")
 print(f"  • ML models trained: {len(ml_results)} analyses")
 print(f"  • Interactive visualizations: {len(interactive_results)} maps/charts")
+print(f"  • Network nodes: {network_results['network']['stats']['nodes']} stations")
+print(f"  • Network edges: {network_results['network']['stats']['edges']} routes")
 
 print("\nGenerated Files:")
 print(f"  • Report: {report_path}")

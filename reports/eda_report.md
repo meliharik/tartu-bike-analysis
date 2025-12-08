@@ -1,6 +1,6 @@
 # Tartu Bike Data - Exploratory Data Analysis Report
 
-**Generated**: 2025-12-08 10:02:33
+**Generated**: 2025-12-08 10:08:12
 
 
 ---
@@ -409,5 +409,80 @@ Note: No weekend data available for comparison
 **Top Station Starts**: 1,176
 
 **Top Station Ends**: 1,146
+
+
+
+
+## Network Analysis
+
+
+### Network Structure
+
+**Total Stations (Nodes)**: 73
+
+**Total Routes (Edges)**: 3520
+
+**Network Density**: 0.6697
+
+**Strongly Connected**: Yes
+
+**Weakly Connected**: Yes
+
+**Network Diameter**: 3
+
+**Average Shortest Path**: 1.21
+
+
+
+
+### Top 10 Stations by Centrality
+
+**PageRank (Overall Importance):**
+
+1. Uueturu: 0.0538
+
+2. Soola: 0.0380
+
+3. Pirogovi plats: 0.0266
+
+4. Eeden: 0.0257
+
+5. Vabadussild: 0.0229
+
+6. Roosi: 0.0228
+
+7. Veeriku: 0.0220
+
+8. Aleksandri: 0.0218
+
+9. Lõunakeskus: 0.0208
+
+10. Turusild: 0.0203
+
+
+
+
+### Community Detection
+
+**Number of Communities**: 3
+
+**Modularity Score**: 0.1772
+
+
+
+
+### Shortest Paths (Top Stations)
+
+**Sample Shortest Paths:**
+
+- Veeriku → ERM: 1 hops
+
+- Veeriku → Turusild: 1 hops
+
+- Eeden → Vabadussild: 2 hops
+
+- Eeden → Roosi: 2 hops
+
+- Eeden → Veeriku: 1 hops
 
 
