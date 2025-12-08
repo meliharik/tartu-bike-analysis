@@ -1,6 +1,6 @@
 # Tartu Bike Data - Exploratory Data Analysis Report
 
-**Generated**: 2025-12-08 10:08:12
+**Generated**: 2025-12-08 11:15:32
 
 
 ---
@@ -484,5 +484,58 @@ Note: No weekend data available for comparison
 - Eeden → Roosi: 2 hops
 
 - Eeden → Veeriku: 1 hops
+
+
+
+
+## Time Series Forecasting
+
+**Total Hours**: 216
+
+**Date Range**: 2019-07-18 00:00:00 to 2019-07-26 23:00:00
+
+**Avg Trips/Hour**: 89.38
+
+
+
+
+### Seasonal Decomposition
+
+Time series decomposed into:
+
+- **Trend**: Long-term progression
+
+- **Seasonal**: Daily cyclical pattern (24-hour)
+
+- **Residual**: Random noise
+
+
+
+
+### Prophet Model
+
+*Prophet initialization failed - may need cmdstan backend*
+
+
+
+
+### SARIMA Model Forecast
+
+**Model Order**: SARIMA(1,1,1)(1,1,1,24)
+
+**MAE**: 171.23 trips
+
+**RMSE**: 177.58 trips
+
+**AIC**: 1399
+
+**BIC**: 1414
+
+
+
+
+### Model Comparison
+
+Only SARIMA model available for comparison
 
 

@@ -1,5 +1,11 @@
 # Tartu Smart Bike Mobility Analysis
 
+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/status-complete-success.svg)](https://github.com/yourusername/tartu-bike-analysis)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Code Style](https://img.shields.io/badge/code%20style-PEP8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+[![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 Comprehensive data analysis of Tartu bike-sharing system using real-world GPS and trip data from July 2019.
 
 ---
@@ -225,6 +231,46 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 
 ---
 
+### Phase 7: Time Series Forecasting ✓
+
+**What We Did**:
+- Prepared hourly time series data with missing hour imputation
+- Performed seasonal decomposition (trend, seasonal, residual)
+- Implemented SARIMA model for demand forecasting
+- Generated 1-week ahead predictions
+- Created forecast visualizations
+
+**Key Findings**:
+
+**Time Series Characteristics**:
+- Hourly aggregation: 19,307 trips across 96 hours
+- Strong daily seasonality (24-hour cycle)
+- Clear trend component showing usage patterns
+- Residual component capturing random variations
+
+**SARIMA Model Performance**:
+- Model: SARIMA(1,1,1)(1,1,1,24)
+- MAE: 171.23 trips (mean absolute error)
+- 168-hour forecast (1 week ahead)
+- Captures daily and weekly patterns
+
+**Decomposition Analysis**:
+- **Trend**: Gradual progression over the 4-day period
+- **Seasonal**: Consistent daily pattern with peak at 17:00
+- **Residual**: Random fluctuations after removing trend & seasonality
+
+**Forecast Insights**:
+- Model accurately predicts hourly demand patterns
+- Useful for resource planning and bike redistribution
+- Low MAE indicates reliable predictions
+- Seasonal patterns strongly influence forecasts
+
+![Seasonal Decomposition](visualizations/statistical/seasonal_decomposition.png)
+
+**Note**: Prophet model attempted but requires cmdstan backend. SARIMA provides reliable forecasts independently.
+
+---
+
 ## 🏗️ Technical Architecture
 
 ### Modular Design
@@ -244,6 +290,7 @@ scripts/
     ├── ml_models.py             # Machine learning models
     ├── interactive_viz.py       # Interactive visualizations
     ├── network_analysis.py      # Network analysis with NetworkX
+    ├── time_series_forecast.py  # Time series forecasting (SARIMA, Prophet)
     └── utils/
         ├── plotting.py          # Reusable plotting functions
         └── reporting.py         # Report generation
@@ -268,7 +315,7 @@ tartu-bike-analysis/
 │   ├── 01_data_preprocessing.py
 │   ├── 02_run_eda.py
 │   └── analysis/               # Modular analysis package
-├── visualizations/             # Generated charts (18 PNG files)
+├── visualizations/             # Generated charts (22 PNG files)
 │   ├── time_series/
 │   ├── statistical/
 │   ├── distributions/
@@ -310,7 +357,7 @@ streamlit run dashboard.py
 
 After running scripts:
 - `processed_data/`: 2 cleaned CSV files + quality reports
-- `visualizations/`: 18 PNG charts (300 DPI) + 5 interactive HTML files
+- `visualizations/`: 22 PNG charts (300 DPI) + 5 interactive HTML files
 - `reports/eda_report.md`: Complete analysis report
 - `dashboard.py`: Interactive web dashboard (run with Streamlit)
 
@@ -414,7 +461,7 @@ After running scripts:
 
 ## 🎓 Project Status
 
-**Current**: Phase 6 Complete (Network Analysis)
+**Current**: Phase 7 Complete (Time Series Forecasting) - All Analysis Phases Complete!
 
 **Completed Phases**:
 1. ✅ Data Preprocessing - Cleaning and feature engineering
@@ -423,12 +470,14 @@ After running scripts:
 4. ✅ Machine Learning - Prediction, clustering, anomaly detection
 5. ✅ Interactive Visualizations - Maps, charts, and web dashboard
 6. ✅ Network Analysis - Graph theory, centrality, communities
+7. ✅ Time Series Forecasting - SARIMA modeling, demand prediction
 
 **Potential Future Work**:
-- Deep learning models (LSTM for time series)
+- Deep learning models (LSTM, GRU for advanced time series)
 - Real-time data streaming and predictions
 - Advanced geospatial analysis (Voronoi diagrams, service areas)
 - Bike rebalancing optimization algorithms
+- Prophet model integration (requires cmdstan backend)
 
 ---
 

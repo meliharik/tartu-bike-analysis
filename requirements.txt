@@ -10,3 +10,5 @@ folium==0.15.1
 plotly==5.18.0
 streamlit==1.29.0
 networkx==3.2.1
+prophet==1.1.5
+statsmodels==0.14.1

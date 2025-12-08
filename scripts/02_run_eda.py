@@ -20,6 +20,7 @@ from analysis.statistical_analysis import run_statistical_analysis
 from analysis.ml_models import run_ml_analysis
 from analysis.interactive_viz import run_interactive_visualizations
 from analysis.network_analysis import run_network_analysis
+from analysis.time_series_forecast import run_time_series_forecasting
 from analysis.utils.plotting import setup_plot_style
 from analysis.utils.reporting import MarkdownReport
 
@@ -90,6 +91,10 @@ all_results['interactive'] = interactive_results
 network_results = run_network_analysis(routes, report)
 all_results['network'] = network_results
 
+# Time Series Forecasting
+forecast_results = run_time_series_forecasting(routes, report)
+all_results['forecast'] = forecast_results
+
 # Save report
 print("\n[Saving Report]")
 print("-" * 80)
@@ -112,6 +117,10 @@ print(f"  • ML models trained: {len(ml_results)} analyses")
 print(f"  • Interactive visualizations: {len(interactive_results)} maps/charts")
 print(f"  • Network nodes: {network_results['network']['stats']['nodes']} stations")
 print(f"  • Network edges: {network_results['network']['stats']['edges']} routes")
+if forecast_results['prophet']['metrics'] is not None:
+    print(f"  • Forecast MAE (Prophet): {forecast_results['prophet']['metrics']['mae']:.2f} trips")
+elif 'sarima' in forecast_results and forecast_results['sarima']['metrics'] is not None:
+    print(f"  • Forecast MAE (SARIMA): {forecast_results['sarima']['metrics']['mae']:.2f} trips")
 
 print("\nGenerated Files:")
 print(f"  • Report: {report_path}")
