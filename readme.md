@@ -16,7 +16,7 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 
 ### 🌐 Live Gallery (GitHub Pages)
 
-- Interactive + static outputs are published at `https://meliharik.github.io/tartu-bike-analysis/` (enable GitHub Pages with branch `main`, folder `/docs`).
+- Interactive + static outputs are published at `https://meliharik.github.io/tartu-bike-analysis/`.
 - The page pulls assets directly from `visualizations/` and links to `reports/eda_report.md`.
 
 ### Research Questions

@@ -1,0 +1,4 @@
+#
+# Disables Jekyll processing on GitHub Pages so static assets resolve as-is.
+#
+
