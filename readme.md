@@ -14,6 +14,11 @@ Comprehensive data analysis of Tartu bike-sharing system using real-world GPS an
 
 Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, user behavior, and system usage through data science and visualization techniques.
 
+### 🌐 Live Gallery (GitHub Pages)
+
+- Interactive + static outputs are published at `https://meliharik.github.io/tartu-bike-analysis/` (enable GitHub Pages with branch `main`, folder `/docs`).
+- The page pulls assets directly from `visualizations/` and links to `reports/eda_report.md`.
+
 ### Research Questions
 
 - What are the peak usage hours and days?

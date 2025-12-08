@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tartu Smart Bike – Interactive Gallery</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --accent: #38bdf8;
+      --muted: #94a3b8;
+      --shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0b1224, #0f172a 40%, #0b1224 75%);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 32px 16px 64px;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      background: rgba(17, 24, 39, 0.85);
+      border: 1px solid rgba(56, 189, 248, 0.15);
+      border-radius: 18px;
+      padding: 28px 28px 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .badge { display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(56,189,248,0.12); color: #7dd3fc; font-weight: 600; letter-spacing: 0.02em; font-size: 13px; }
+    h1 { margin: 10px 0 6px; font-size: 32px; letter-spacing: -0.02em; }
+    p.lead { margin: 6px 0 0; color: var(--muted); max-width: 780px; }
+    .grid { display: grid; gap: 18px; margin-top: 22px; }
+    .cards { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card {
+      background: rgba(17, 24, 39, 0.78);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+    img, iframe {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+      background: #0b1224;
+    }
+    iframe { min-height: 520px; }
+    a.cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 14px; border-radius: 12px; border: 1px solid rgba(56,189,248,0.35);
+      color: #7dd3fc; text-decoration: none; font-weight: 600; letter-spacing: 0.01em;
+      transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+    }
+    a.cta:hover { transform: translateY(-1px); box-shadow: 0 12px 30px rgba(56,189,248,0.22); border-color: rgba(56,189,248,0.6); }
+    .section-title { margin: 34px 0 12px; font-size: 22px; letter-spacing: -0.01em; }
+    .footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 640px) {
+      body { padding: 20px 12px 40px; }
+      h1 { font-size: 26px; }
+      iframe { min-height: 420px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="badge">Tartu Smart Bike · July 2019</div>
+      <h1>Interactive Findings & Visual Gallery</h1>
+      <p class="lead">
+        Explore the key results from temporal, spatial, statistical, machine learning, and network analyses of the Tartu Smart Bike system. All assets are generated from the open dataset and live in this repository.
+      </p>
+      <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="cta" href="https://github.com/yourusername/tartu-bike-analysis" target="_blank">View on GitHub</a>
+        <a class="cta" href="../reports/eda_report.md" target="_blank">Read full EDA report (Markdown)</a>
+      </div>
+    </header>
+
+    <h2 class="section-title">Time Series & Forecasting</h2>
+    <div class="grid cards">
+      <div class="card">
+        <h3>Seasonal Decomposition</h3>
+        <div class="meta">Hourly demand · trend / seasonal / residual</div>
+        <img src="../visualizations/statistical/seasonal_decomposition.png" alt="Seasonal decomposition">
+      </div>
+      <div class="card">
+        <h3>Forecast (SARIMA)</h3>
+        <div class="meta">1-week ahead demand prediction</div>
+        <img src="../visualizations/time_series/hourly_pattern.png" alt="Hourly pattern">
+      </div>
+    </div>
+
+    <h2 class="section-title">Statistical Insights</h2>
+    <div class="grid cards">
+      <div class="card">
+        <h3>User Segmentation</h3>
+        <div class="meta">3 usage segments</div>
+        <img src="../visualizations/statistical/user_segmentation.png" alt="User segmentation">
+      </div>
+      <div class="card">
+        <h3>Community Detection</h3>
+        <div class="meta">Louvain communities</div>
+        <img src="../visualizations/statistical/community_distribution.png" alt="Community distribution">
+      </div>
+      <div class="card">
+        <h3>Centrality Metrics</h3>
+        <div class="meta">NetworkX centralities</div>
+        <img src="../visualizations/statistical/centrality_metrics.png" alt="Centrality metrics">
+      </div>
+      <div class="card">
+        <h3>Station Network</h3>
+        <div class="meta">73 stations · 3,520 routes</div>
+        <img src="../visualizations/statistical/station_network.png" alt="Station network">
+      </div>
+    </div>
+
+    <h2 class="section-title">Machine Learning</h2>
+    <div class="grid cards">
+      <div class="card">
+        <h3>User Behavior Clustering</h3>
+        <div class="meta">K-means clusters</div>
+        <img src="../visualizations/ml/user_behavior_clustering.png" alt="User behavior clustering">
+      </div>
+      <div class="card">
+        <h3>Anomaly Detection</h3>
+        <div class="meta">Isolation Forest results</div>
+        <img src="../visualizations/ml/anomaly_detection.png" alt="Anomaly detection">
+      </div>
+    </div>
+
+    <h2 class="section-title">Interactive Maps & Charts</h2>
+    <div class="grid cards">
+      <div class="card">
+        <h3>GPS Heatmap</h3>
+        <div class="meta">Folium · zoom & pan</div>
+        <iframe title="GPS Heatmap" src="../visualizations/interactive_heatmap.html"></iframe>
+      </div>
+    </div>
+
+    <h2 class="section-title">How to reproduce</h2>
+    <div class="card">
+      <p class="meta">Local reproduction</p>
+      <p>Install dependencies and run:</p>
+      <pre style="white-space: pre-wrap; background: #0b1224; padding: 12px; border-radius: 12px; border:1px solid rgba(148,163,184,0.22); color: var(--text); font-size: 14px;">pip install -r requirements.txt
+python scripts/01_data_preprocessing.py
+python scripts/02_run_eda.py</pre>
+      <p class="meta">Streamlit dashboard</p>
+      <pre style="white-space: pre-wrap; background: #0b1224; padding: 12px; border-radius: 12px; border:1px solid rgba(148,163,184,0.22); color: var(--text); font-size: 14px;">streamlit run dashboard.py</pre>
+    </div>
+
+    <div class="footer">
+      Built from open Tartu Smart Bike data (July 2019). All visualizations and HTML assets are generated by the analysis scripts in this repository.
+    </div>
+  </div>
+</body>
+</html>
+
