@@ -160,6 +160,35 @@ Analysis of Tartu Smart Bike system (Estonia) to understand mobility patterns, u
 
 ---
 
+### Phase 5: Interactive Visualizations & Dashboard ✓
+
+**What We Did**:
+- Interactive maps with Folium (station map, trip flows, GPS heatmap)
+- Interactive charts with Plotly (hourly patterns, station analysis)
+- Streamlit web dashboard with filters and real-time exploration
+- 5 HTML visualizations for standalone viewing
+
+**Key Features**:
+
+**Interactive Maps**:
+- Station Map: 73 stations with trip counts and popups
+- Trip Flow: Top 20 routes visualized with weighted lines
+- GPS Heatmap: 15,000+ GPS points density visualization
+
+**Plotly Charts**:
+- Interactive hourly analysis with zoom and hover
+- Station comparison with grouped bars
+- Real-time filtering and exploration
+
+**Streamlit Dashboard**:
+- Web-based interface for data exploration
+- Dynamic filters (date range, bike type, time period)
+- 4 analysis tabs (Temporal, Spatial, Statistical, ML)
+- Real-time metric updates
+- Responsive design with custom styling
+
+---
+
 ## 🏗️ Technical Architecture
 
 ### Modular Design
@@ -169,7 +198,7 @@ We implemented a **modular architecture** for maintainability and scalability:
 ```
 scripts/
 ├── 01_data_preprocessing.py    # Data cleaning pipeline (415 lines)
-├── 02_run_eda.py               # EDA orchestrator (110 lines)
+├── 02_run_eda.py               # EDA orchestrator (115 lines)
 └── analysis/                    # Modular analysis package
     ├── config.py                # Configuration & constants
     ├── data_loader.py           # Data loading utilities
@@ -177,9 +206,11 @@ scripts/
     ├── spatial_analysis.py      # Location-based analysis
     ├── statistical_analysis.py  # Statistical testing & segmentation
     ├── ml_models.py             # Machine learning models
+    ├── interactive_viz.py       # Interactive visualizations
     └── utils/
         ├── plotting.py          # Reusable plotting functions
         └── reporting.py         # Report generation
+dashboard.py                     # Streamlit dashboard (360 lines)
 ```
 
 **Benefits**:
@@ -231,16 +262,20 @@ pip3 install -r requirements.txt
 # Step 1: Clean and prepare data
 python3 scripts/01_data_preprocessing.py
 
-# Step 2: Run complete analysis (EDA, Statistical, ML)
+# Step 2: Run complete analysis (EDA, Statistical, ML, Interactive)
 python3 scripts/02_run_eda.py
+
+# Step 3 (Optional): Launch interactive dashboard
+streamlit run dashboard.py
 ```
 
 ### Output
 
 After running scripts:
 - `processed_data/`: 2 cleaned CSV files + quality reports
-- `visualizations/`: 18 high-resolution charts (300 DPI)
-- `reports/eda_report.md`: Complete analysis report with ML models
+- `visualizations/`: 18 PNG charts (300 DPI) + 5 interactive HTML files
+- `reports/eda_report.md`: Complete analysis report
+- `dashboard.py`: Interactive web dashboard (run with Streamlit)
 
 ---
 
@@ -275,6 +310,9 @@ After running scripts:
 | seaborn | Statistical plots |
 | scikit-learn | Machine learning & clustering |
 | scipy | Statistical testing |
+| folium | Interactive maps |
+| plotly | Interactive charts |
+| streamlit | Web dashboard |
 
 ---
 
@@ -308,6 +346,18 @@ After running scripts:
 - Route clustering analysis (5 clusters)
 - Anomaly detection (5% outliers)
 
+**Interactive Visualizations** (5 HTML files):
+- Interactive station map (Folium)
+- Trip flow visualization (Folium)
+- GPS density heatmap (Folium)
+- Interactive hourly analysis (Plotly)
+- Interactive station comparison (Plotly)
+
+**Dashboard** (1 Streamlit app):
+- Real-time data exploration with filters
+- 4 analysis tabs with interactive charts
+- Responsive web interface
+
 ---
 
 ## 📄 Documentation
@@ -321,19 +371,20 @@ After running scripts:
 
 ## 🎓 Project Status
 
-**Current**: Phase 4 Complete (Machine Learning)
+**Current**: Phase 5 Complete (Interactive Visualizations & Dashboard)
 
 **Completed Phases**:
 1. ✅ Data Preprocessing - Cleaning and feature engineering
 2. ✅ Exploratory Data Analysis - Patterns and visualizations
 3. ✅ Statistical Analysis - Hypothesis testing and segmentation
 4. ✅ Machine Learning - Prediction, clustering, anomaly detection
+5. ✅ Interactive Visualizations - Maps, charts, and web dashboard
 
 **Potential Future Work**:
-- Advanced visualizations (interactive maps, animations)
 - Deep learning models (LSTM for time series)
-- Real-time prediction dashboard
-- Geospatial network analysis
+- Real-time data streaming and predictions
+- Geospatial network analysis (NetworkX)
+- Mobile-responsive dashboard enhancements
 
 ---
 

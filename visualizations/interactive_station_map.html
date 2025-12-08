@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_312171c70c0e3038d2dd9acbfd7a573d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_312171c70c0e3038d2dd9acbfd7a573d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_312171c70c0e3038d2dd9acbfd7a573d = L.map(
+                "map_312171c70c0e3038d2dd9acbfd7a573d",
+                {
+                    center: [58.37395269011775, 26.725261902841243],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_78e852d0a3b4a667ec5f2dd0c126a595 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_78e852d0a3b4a667ec5f2dd0c126a595.addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+            var circle_marker_7c4fa07e1cf91efa5f021dc31e502e35 = L.circleMarker(
+                [58.377037764705875, 26.733027549019607],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.507657623150946, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_54690ba16e58d3386f6c16516d0f4a79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10085684d29f0d889f97674624fc5216 = $(`<div id="html_10085684d29f0d889f97674624fc5216" style="width: 100.0%; height: 100.0%;"><b>AHHAA</b><br>Total Trips: 519<br>Starts: 255<br>Ends: 264</div>`)[0];
+                popup_54690ba16e58d3386f6c16516d0f4a79.setContent(html_10085684d29f0d889f97674624fc5216);
+            
+        
+
+        circle_marker_7c4fa07e1cf91efa5f021dc31e502e35.bindPopup(popup_54690ba16e58d3386f6c16516d0f4a79)
+        ;
+
+        
+    
+    
+            circle_marker_7c4fa07e1cf91efa5f021dc31e502e35.bindTooltip(
+                `<div>
+                     AHHAA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2c9803f85e6ad6a61a3c1ff338964fed = L.circleMarker(
+                [58.376182464114834, 26.72885122009569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.49517305365863, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_71b07fe4bf79b49e4e2f187c53e32376 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c6a605adcc7c0c097eb48e98a25ef7a = $(`<div id="html_2c6a605adcc7c0c097eb48e98a25ef7a" style="width: 100.0%; height: 100.0%;"><b>Aleksandri</b><br>Total Trips: 851<br>Starts: 418<br>Ends: 433</div>`)[0];
+                popup_71b07fe4bf79b49e4e2f187c53e32376.setContent(html_2c6a605adcc7c0c097eb48e98a25ef7a);
+            
+        
+
+        circle_marker_2c9803f85e6ad6a61a3c1ff338964fed.bindPopup(popup_71b07fe4bf79b49e4e2f187c53e32376)
+        ;
+
+        
+    
+    
+            circle_marker_2c9803f85e6ad6a61a3c1ff338964fed.bindTooltip(
+                `<div>
+                     Aleksandri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0ae88fbe74e652dc6d619f6ea3f2f01c = L.circleMarker(
+                [58.37793218803419, 26.751977615384614],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.321150299679372, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_08a8a42a17d7aa8b12e3312f57b98125 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92c0e55f06657f9b4212badb335203af = $(`<div id="html_92c0e55f06657f9b4212badb335203af" style="width: 100.0%; height: 100.0%;"><b>Anne saun</b><br>Total Trips: 780<br>Starts: 390<br>Ends: 390</div>`)[0];
+                popup_08a8a42a17d7aa8b12e3312f57b98125.setContent(html_92c0e55f06657f9b4212badb335203af);
+            
+        
+
+        circle_marker_0ae88fbe74e652dc6d619f6ea3f2f01c.bindPopup(popup_08a8a42a17d7aa8b12e3312f57b98125)
+        ;
+
+        
+    
+    
+            circle_marker_0ae88fbe74e652dc6d619f6ea3f2f01c.bindTooltip(
+                `<div>
+                     Anne saun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7641e5d33f6cd54d01d38e9e2f66c3a9 = L.circleMarker(
+                [58.376532066473985, 26.764106599229287],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.067577675866687, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_50e90c8c7d19d8419eb668290fd94136 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74ebad7ec538777f262211d273cfa16d = $(`<div id="html_74ebad7ec538777f262211d273cfa16d" style="width: 100.0%; height: 100.0%;"><b>Annelinn</b><br>Total Trips: 687<br>Starts: 347<br>Ends: 340</div>`)[0];
+                popup_50e90c8c7d19d8419eb668290fd94136.setContent(html_74ebad7ec538777f262211d273cfa16d);
+            
+        
+
+        circle_marker_7641e5d33f6cd54d01d38e9e2f66c3a9.bindPopup(popup_50e90c8c7d19d8419eb668290fd94136)
+        ;
+
+        
+    
+    
+            circle_marker_7641e5d33f6cd54d01d38e9e2f66c3a9.bindTooltip(
+                `<div>
+                     Annelinn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e6c7b21071177d3ca36fbe8a7e4e925 = L.circleMarker(
+                [58.37553074923547, 26.76943626911315],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.823292103710079, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_207b7235fb4a119241091b9813eb7ed8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ac43b8a546a99da46bb092af1551935 = $(`<div id="html_1ac43b8a546a99da46bb092af1551935" style="width: 100.0%; height: 100.0%;"><b>Annelinna gümnaasium</b><br>Total Trips: 223<br>Starts: 110<br>Ends: 113</div>`)[0];
+                popup_207b7235fb4a119241091b9813eb7ed8.setContent(html_1ac43b8a546a99da46bb092af1551935);
+            
+        
+
+        circle_marker_2e6c7b21071177d3ca36fbe8a7e4e925.bindPopup(popup_207b7235fb4a119241091b9813eb7ed8)
+        ;
+
+        
+    
+    
+            circle_marker_2e6c7b21071177d3ca36fbe8a7e4e925.bindTooltip(
+                `<div>
+                     Annelinna gümnaasium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e60fa11f3add9e535ffa3654f5fec23 = L.circleMarker(
+                [58.37012229638959, 26.76768652392947],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.364217194899618, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_f99f345acf6101da9ff1d320cdb322fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc14688054eb51cc10ad7bcc8b4c346a = $(`<div id="html_bc14688054eb51cc10ad7bcc8b4c346a" style="width: 100.0%; height: 100.0%;"><b>Annelinna keskus</b><br>Total Trips: 797<br>Starts: 397<br>Ends: 400</div>`)[0];
+                popup_f99f345acf6101da9ff1d320cdb322fa.setContent(html_bc14688054eb51cc10ad7bcc8b4c346a);
+            
+        
+
+        circle_marker_5e60fa11f3add9e535ffa3654f5fec23.bindPopup(popup_f99f345acf6101da9ff1d320cdb322fa)
+        ;
+
+        
+    
+    
+            circle_marker_5e60fa11f3add9e535ffa3654f5fec23.bindTooltip(
+                `<div>
+                     Annelinna keskus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9fb610cc6ec9fd3fe5b532e2183a5d60 = L.circleMarker(
+                [58.37281736370716, 26.774889489875388],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.481038719212446, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_2c780befb10d5064d898f2eda6b059f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20cdd9ec301543f362a810b64b54736c = $(`<div id="html_20cdd9ec301543f362a810b64b54736c" style="width: 100.0%; height: 100.0%;"><b>Annelinna kiir</b><br>Total Trips: 845<br>Starts: 428<br>Ends: 417</div>`)[0];
+                popup_2c780befb10d5064d898f2eda6b059f3.setContent(html_20cdd9ec301543f362a810b64b54736c);
+            
+        
+
+        circle_marker_9fb610cc6ec9fd3fe5b532e2183a5d60.bindPopup(popup_2c780befb10d5064d898f2eda6b059f3)
+        ;
+
+        
+    
+    
+            circle_marker_9fb610cc6ec9fd3fe5b532e2183a5d60.bindTooltip(
+                `<div>
+                     Annelinna kiir
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_40bb7e142d9d7389508805bee45bc82d = L.circleMarker(
+                [58.37063071180555, 26.715247100694445],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.300558097174845, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_7b61e65a348a6e9a2256bee577d88ada = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94193e6bc4893cc6e6631884eb209ca4 = $(`<div id="html_94193e6bc4893cc6e6631884eb209ca4" style="width: 100.0%; height: 100.0%;"><b>Aparaaditehas</b><br>Total Trips: 772<br>Starts: 384<br>Ends: 388</div>`)[0];
+                popup_7b61e65a348a6e9a2256bee577d88ada.setContent(html_94193e6bc4893cc6e6631884eb209ca4);
+            
+        
+
+        circle_marker_40bb7e142d9d7389508805bee45bc82d.bindPopup(popup_7b61e65a348a6e9a2256bee577d88ada)
+        ;
+
+        
+    
+    
+            circle_marker_40bb7e142d9d7389508805bee45bc82d.bindTooltip(
+                `<div>
+                     Aparaaditehas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ced2765fe6d11fc68edf54c67dc93b6 = L.circleMarker(
+                [58.37525114285714, 26.734520198412696],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.942523679580924, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_36afbc5ee7b88923f81fb628473a712f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf050e036d412ad69538c5e9b4a0448e = $(`<div id="html_bf050e036d412ad69538c5e9b4a0448e" style="width: 100.0%; height: 100.0%;"><b>Aura veekeskus</b><br>Total Trips: 391<br>Starts: 210<br>Ends: 181</div>`)[0];
+                popup_36afbc5ee7b88923f81fb628473a712f.setContent(html_bf050e036d412ad69538c5e9b4a0448e);
+            
+        
+
+        circle_marker_2ced2765fe6d11fc68edf54c67dc93b6.bindPopup(popup_36afbc5ee7b88923f81fb628473a712f)
+        ;
+
+        
+    
+    
+            circle_marker_2ced2765fe6d11fc68edf54c67dc93b6.bindTooltip(
+                `<div>
+                     Aura veekeskus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e7598917d5e7ab964cd06169dd298f0 = L.circleMarker(
+                [58.38330083333334, 26.726759166666668],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.58351893845611, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_ee9977941a0f2e4ab390ca8180bb8ee0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1010ba14c387cafb6481d64cbe1820f7 = $(`<div id="html_1010ba14c387cafb6481d64cbe1820f7" style="width: 100.0%; height: 100.0%;"><b>Delta</b><br>Total Trips: 5<br>Starts: 2<br>Ends: 3</div>`)[0];
+                popup_ee9977941a0f2e4ab390ca8180bb8ee0.setContent(html_1010ba14c387cafb6481d64cbe1820f7);
+            
+        
+
+        circle_marker_1e7598917d5e7ab964cd06169dd298f0.bindPopup(popup_ee9977941a0f2e4ab390ca8180bb8ee0)
+        ;
+
+        
+    
+    
+            circle_marker_1e7598917d5e7ab964cd06169dd298f0.bindTooltip(
+                `<div>
+                     Delta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c906acc490f201794184a6ac2dbe10f5 = L.circleMarker(
+                [58.389751094276086, 26.69453734006734],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.462217233709174, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_6e34991b58b6218ecd89725c86e83d36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_478588df7eb88fe21703301b88ee74ed = $(`<div id="html_478588df7eb88fe21703301b88ee74ed" style="width: 100.0%; height: 100.0%;"><b>EMÜ spordihoone</b><br>Total Trips: 186<br>Starts: 99<br>Ends: 87</div>`)[0];
+                popup_6e34991b58b6218ecd89725c86e83d36.setContent(html_478588df7eb88fe21703301b88ee74ed);
+            
+        
+
+        circle_marker_c906acc490f201794184a6ac2dbe10f5.bindPopup(popup_6e34991b58b6218ecd89725c86e83d36)
+        ;
+
+        
+    
+    
+            circle_marker_c906acc490f201794184a6ac2dbe10f5.bindTooltip(
+                `<div>
+                     EMÜ spordihoone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_366be3a4e6530e2f20c285426b5bfb8e = L.circleMarker(
+                [58.3940189260385, 26.743456641337385],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.194291403773303, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_958c6c76d4315fd6dd9badd93e034c07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_595de9e29eeafa02835e91389974fffb = $(`<div id="html_595de9e29eeafa02835e91389974fffb" style="width: 100.0%; height: 100.0%;"><b>ERM</b><br>Total Trips: 732<br>Starts: 329<br>Ends: 403</div>`)[0];
+                popup_958c6c76d4315fd6dd9badd93e034c07.setContent(html_595de9e29eeafa02835e91389974fffb);
+            
+        
+
+        circle_marker_366be3a4e6530e2f20c285426b5bfb8e.bindPopup(popup_958c6c76d4315fd6dd9badd93e034c07)
+        ;
+
+        
+    
+    
+            circle_marker_366be3a4e6530e2f20c285426b5bfb8e.bindTooltip(
+                `<div>
+                     ERM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6243e4b24e585116fa7da3317ad189b9 = L.circleMarker(
+                [58.37339126865671, 26.751768156094524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.976826363999184, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_88a13b620449eed4918e9ec2e07064c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b519f1014792ae11f384b7f48cf23315 = $(`<div id="html_b519f1014792ae11f384b7f48cf23315" style="width: 100.0%; height: 100.0%;"><b>Eeden</b><br>Total Trips: 1,083<br>Starts: 536<br>Ends: 547</div>`)[0];
+                popup_88a13b620449eed4918e9ec2e07064c6.setContent(html_b519f1014792ae11f384b7f48cf23315);
+            
+        
+
+        circle_marker_6243e4b24e585116fa7da3317ad189b9.bindPopup(popup_88a13b620449eed4918e9ec2e07064c6)
+        ;
+
+        
+    
+    
+            circle_marker_6243e4b24e585116fa7da3317ad189b9.bindTooltip(
+                `<div>
+                     Eeden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_122b64a302f7a9b1a4a1053c81fa2251 = L.circleMarker(
+                [58.345027627365354, 26.779445851528383],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.326629608069283, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_03da7adf09cddb51cea8f0665ca523fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4c2820b96106e57a00a2854bc706542 = $(`<div id="html_d4c2820b96106e57a00a2854bc706542" style="width: 100.0%; height: 100.0%;"><b>Ihaste</b><br>Total Trips: 474<br>Starts: 229<br>Ends: 245</div>`)[0];
+                popup_03da7adf09cddb51cea8f0665ca523fd.setContent(html_d4c2820b96106e57a00a2854bc706542);
+            
+        
+
+        circle_marker_122b64a302f7a9b1a4a1053c81fa2251.bindPopup(popup_03da7adf09cddb51cea8f0665ca523fd)
+        ;
+
+        
+    
+    
+            circle_marker_122b64a302f7a9b1a4a1053c81fa2251.bindTooltip(
+                `<div>
+                     Ihaste
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_32678e6a852b102ec8b6fc53ad6ffa4d = L.circleMarker(
+                [58.38369834586466, 26.70840661654135],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.21894359036992, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_18536c3e2119839dd604cf6891f619cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6b09eb7a0fd2e04f418e74b1bb89355 = $(`<div id="html_d6b09eb7a0fd2e04f418e74b1bb89355" style="width: 100.0%; height: 100.0%;"><b>J. Hurda</b><br>Total Trips: 272<br>Starts: 133<br>Ends: 139</div>`)[0];
+                popup_18536c3e2119839dd604cf6891f619cf.setContent(html_d6b09eb7a0fd2e04f418e74b1bb89355);
+            
+        
+
+        circle_marker_32678e6a852b102ec8b6fc53ad6ffa4d.bindPopup(popup_18536c3e2119839dd604cf6891f619cf)
+        ;
+
+        
+    
+    
+            circle_marker_32678e6a852b102ec8b6fc53ad6ffa4d.bindTooltip(
+                `<div>
+                     J. Hurda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_687df9348b7af4b222c90772239710a1 = L.circleMarker(
+                [58.38226787090558, 26.71432973025048],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.715866308966918, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_4825ac5138b5fc55d29a80d3b6472b9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f36f829550219de4c7a5e14ef62c15c = $(`<div id="html_2f36f829550219de4c7a5e14ef62c15c" style="width: 100.0%; height: 100.0%;"><b>K. E. von Baeri</b><br>Total Trips: 349<br>Starts: 173<br>Ends: 176</div>`)[0];
+                popup_4825ac5138b5fc55d29a80d3b6472b9c.setContent(html_2f36f829550219de4c7a5e14ef62c15c);
+            
+        
+
+        circle_marker_687df9348b7af4b222c90772239710a1.bindPopup(popup_4825ac5138b5fc55d29a80d3b6472b9c)
+        ;
+
+        
+    
+    
+            circle_marker_687df9348b7af4b222c90772239710a1.bindTooltip(
+                `<div>
+                     K. E. von Baeri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_50b2b0a876dceec99e3eb4acb0bd1f59 = L.circleMarker(
+                [58.366313022388056, 26.703433196517413],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.211604132591996, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_0eb113df770e773721882d254dd6ed64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d28566758b291543ba7cfb31ed139df = $(`<div id="html_4d28566758b291543ba7cfb31ed139df" style="width: 100.0%; height: 100.0%;"><b>Kaare</b><br>Total Trips: 271<br>Starts: 134<br>Ends: 137</div>`)[0];
+                popup_0eb113df770e773721882d254dd6ed64.setContent(html_4d28566758b291543ba7cfb31ed139df);
+            
+        
+
+        circle_marker_50b2b0a876dceec99e3eb4acb0bd1f59.bindPopup(popup_0eb113df770e773721882d254dd6ed64)
+        ;
+
+        
+    
+    
+            circle_marker_50b2b0a876dceec99e3eb4acb0bd1f59.bindTooltip(
+                `<div>
+                     Kaare
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ea7706bd0a065d0332bad77643f748e1 = L.circleMarker(
+                [58.37396700331126, 26.752277698675496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.830193918343191, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_004a0139a71aa8d370d42ba02a23c3ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3fc274689d758aee67758bbc7d99ad9 = $(`<div id="html_e3fc274689d758aee67758bbc7d99ad9" style="width: 100.0%; height: 100.0%;"><b>Kalda tee</b><br>Total Trips: 610<br>Starts: 302<br>Ends: 308</div>`)[0];
+                popup_004a0139a71aa8d370d42ba02a23c3ec.setContent(html_e3fc274689d758aee67758bbc7d99ad9);
+            
+        
+
+        circle_marker_ea7706bd0a065d0332bad77643f748e1.bindPopup(popup_004a0139a71aa8d370d42ba02a23c3ec)
+        ;
+
+        
+    
+    
+            circle_marker_ea7706bd0a065d0332bad77643f748e1.bindTooltip(
+                `<div>
+                     Kalda tee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_294ef94d516aae8d9738035194aa6815 = L.circleMarker(
+                [58.377100158428384, 26.683691825095057],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.545754013092335, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_c46f33e2c6670a23731328486bb5f1f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afa083028c72c4e032d73251b104a0fc = $(`<div id="html_afa083028c72c4e032d73251b104a0fc" style="width: 100.0%; height: 100.0%;"><b>Kannikese</b><br>Total Trips: 529<br>Starts: 263<br>Ends: 266</div>`)[0];
+                popup_c46f33e2c6670a23731328486bb5f1f6.setContent(html_afa083028c72c4e032d73251b104a0fc);
+            
+        
+
+        circle_marker_294ef94d516aae8d9738035194aa6815.bindPopup(popup_c46f33e2c6670a23731328486bb5f1f6)
+        ;
+
+        
+    
+    
+            circle_marker_294ef94d516aae8d9738035194aa6815.bindTooltip(
+                `<div>
+                     Kannikese
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dab7693ce545a31e578295b9345e2172 = L.circleMarker(
+                [58.35019940789473, 26.723002604166666],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.800514890617642, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_c7ba34bee804169d2e6a85e98a613cbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5461769867feffebeaae29687560a8a9 = $(`<div id="html_5461769867feffebeaae29687560a8a9" style="width: 100.0%; height: 100.0%;"><b>Karete</b><br>Total Trips: 601<br>Starts: 304<br>Ends: 297</div>`)[0];
+                popup_c7ba34bee804169d2e6a85e98a613cbf.setContent(html_5461769867feffebeaae29687560a8a9);
+            
+        
+
+        circle_marker_dab7693ce545a31e578295b9345e2172.bindPopup(popup_c7ba34bee804169d2e6a85e98a613cbf)
+        ;
+
+        
+    
+    
+            circle_marker_dab7693ce545a31e578295b9345e2172.bindTooltip(
+                `<div>
+                     Karete
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a1f6c8d3b9aa29a5bb7c622c23942e6f = L.circleMarker(
+                [58.37176819835681, 26.76359375],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.746639579154024, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_9017e81a5d5a4426af84856f205b9a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e0c129c921f90022752a4dabe52a5cf = $(`<div id="html_0e0c129c921f90022752a4dabe52a5cf" style="width: 100.0%; height: 100.0%;"><b>Kaunase puiestee</b><br>Total Trips: 585<br>Starts: 284<br>Ends: 301</div>`)[0];
+                popup_9017e81a5d5a4426af84856f205b9a00.setContent(html_0e0c129c921f90022752a4dabe52a5cf);
+            
+        
+
+        circle_marker_a1f6c8d3b9aa29a5bb7c622c23942e6f.bindPopup(popup_9017e81a5d5a4426af84856f205b9a00)
+        ;
+
+        
+    
+    
+            circle_marker_a1f6c8d3b9aa29a5bb7c622c23942e6f.bindTooltip(
+                `<div>
+                     Kaunase puiestee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b576b66b1859b05c9ad1f1f0755ba4d = L.circleMarker(
+                [58.37922517271157, 26.764986044905008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.942523679580924, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_dec301dbe366d64fd4f66827a9aa0c51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5264f944de2a3597fed324750d42921e = $(`<div id="html_5264f944de2a3597fed324750d42921e" style="width: 100.0%; height: 100.0%;"><b>Kivilinna</b><br>Total Trips: 391<br>Starts: 194<br>Ends: 197</div>`)[0];
+                popup_dec301dbe366d64fd4f66827a9aa0c51.setContent(html_5264f944de2a3597fed324750d42921e);
+            
+        
+
+        circle_marker_1b576b66b1859b05c9ad1f1f0755ba4d.bindPopup(popup_dec301dbe366d64fd4f66827a9aa0c51)
+        ;
+
+        
+    
+    
+            circle_marker_1b576b66b1859b05c9ad1f1f0755ba4d.bindTooltip(
+                `<div>
+                     Kivilinna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72d6eedec595937ed82e47317fe135af = L.circleMarker(
+                [58.34907482222222, 26.713641355555556],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.367159534677363, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_78bbbe8d4c206a72934abfa627661eca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ebbc4d6213f232b7c8e89b972724c78 = $(`<div id="html_8ebbc4d6213f232b7c8e89b972724c78" style="width: 100.0%; height: 100.0%;"><b>Kopli</b><br>Total Trips: 293<br>Starts: 150<br>Ends: 143</div>`)[0];
+                popup_78bbbe8d4c206a72934abfa627661eca.setContent(html_8ebbc4d6213f232b7c8e89b972724c78);
+            
+        
+
+        circle_marker_72d6eedec595937ed82e47317fe135af.bindPopup(popup_78bbbe8d4c206a72934abfa627661eca)
+        ;
+
+        
+    
+    
+            circle_marker_72d6eedec595937ed82e47317fe135af.bindTooltip(
+                `<div>
+                     Kopli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c01caba3c7cccc9754bd6fd339d0394 = L.circleMarker(
+                [58.367056142857145, 26.729625291666665],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.616196883019061, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_7e73e8a88e21d3457099aad36d23f9c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06212ac6141d638d77d76d806b7337e1 = $(`<div id="html_06212ac6141d638d77d76d806b7337e1" style="width: 100.0%; height: 100.0%;"><b>Kuu</b><br>Total Trips: 548<br>Starts: 280<br>Ends: 268</div>`)[0];
+                popup_7e73e8a88e21d3457099aad36d23f9c0.setContent(html_06212ac6141d638d77d76d806b7337e1);
+            
+        
+
+        circle_marker_0c01caba3c7cccc9754bd6fd339d0394.bindPopup(popup_7e73e8a88e21d3457099aad36d23f9c0)
+        ;
+
+        
+    
+    
+            circle_marker_0c01caba3c7cccc9754bd6fd339d0394.bindTooltip(
+                `<div>
+                     Kuu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55685c5130c1448997183fc13b0a0ce3 = L.circleMarker(
+                [58.40656950396825, 26.69625833333333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.21189094780116, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_1382141788a1c89d69cdd0c88ad1dda0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6eeb19062c4ceab68f6afa4ac6cf753a = $(`<div id="html_6eeb19062c4ceab68f6afa4ac6cf753a" style="width: 100.0%; height: 100.0%;"><b>Kvissentali</b><br>Total Trips: 164<br>Starts: 84<br>Ends: 80</div>`)[0];
+                popup_1382141788a1c89d69cdd0c88ad1dda0.setContent(html_6eeb19062c4ceab68f6afa4ac6cf753a);
+            
+        
+
+        circle_marker_55685c5130c1448997183fc13b0a0ce3.bindPopup(popup_1382141788a1c89d69cdd0c88ad1dda0)
+        ;
+
+        
+    
+    
+            circle_marker_55685c5130c1448997183fc13b0a0ce3.bindTooltip(
+                `<div>
+                     Kvissentali
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_99c32e6fff54593ad950c79e4f7913e5 = L.circleMarker(
+                [58.37944511194029, 26.71647781094527],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.26242356364273, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_200d56e5d3c97417ff42d174edb44d54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb7a70a0d5c92d47089f775e46a6d07d = $(`<div id="html_cb7a70a0d5c92d47089f775e46a6d07d" style="width: 100.0%; height: 100.0%;"><b>Lossi</b><br>Total Trips: 278<br>Starts: 134<br>Ends: 144</div>`)[0];
+                popup_200d56e5d3c97417ff42d174edb44d54.setContent(html_cb7a70a0d5c92d47089f775e46a6d07d);
+            
+        
+
+        circle_marker_99c32e6fff54593ad950c79e4f7913e5.bindPopup(popup_200d56e5d3c97417ff42d174edb44d54)
+        ;
+
+        
+    
+    
+            circle_marker_99c32e6fff54593ad950c79e4f7913e5.bindTooltip(
+                `<div>
+                     Lossi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e526f8b20aa09e8c7caf8ca7153238a8 = L.circleMarker(
+                [58.35824121212121, 26.679290727272726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.333913584858413, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_cb5b1d2b182245c07bfb679b10a5b8fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_084bf1907c6f5b048219467116bb6286 = $(`<div id="html_084bf1907c6f5b048219467116bb6286" style="width: 100.0%; height: 100.0%;"><b>Lõunakeskus</b><br>Total Trips: 785<br>Starts: 385<br>Ends: 400</div>`)[0];
+                popup_cb5b1d2b182245c07bfb679b10a5b8fd.setContent(html_084bf1907c6f5b048219467116bb6286);
+            
+        
+
+        circle_marker_e526f8b20aa09e8c7caf8ca7153238a8.bindPopup(popup_cb5b1d2b182245c07bfb679b10a5b8fd)
+        ;
+
+        
+    
+    
+            circle_marker_e526f8b20aa09e8c7caf8ca7153238a8.bindTooltip(
+                `<div>
+                     Lõunakeskus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9687712921ebbe4d57f44184c0960da1 = L.circleMarker(
+                [58.368874020618556, 26.69846800687285],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.636239987688432, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_95df63be117d8c15a645043f7432dd91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fafb624f7a711332776102214483324d = $(`<div id="html_fafb624f7a711332776102214483324d" style="width: 100.0%; height: 100.0%;"><b>Maarjamõisa</b><br>Total Trips: 203<br>Starts: 97<br>Ends: 106</div>`)[0];
+                popup_95df63be117d8c15a645043f7432dd91.setContent(html_fafb624f7a711332776102214483324d);
+            
+        
+
+        circle_marker_9687712921ebbe4d57f44184c0960da1.bindPopup(popup_95df63be117d8c15a645043f7432dd91)
+        ;
+
+        
+    
+    
+            circle_marker_9687712921ebbe4d57f44184c0960da1.bindTooltip(
+                `<div>
+                     Maarjamõisa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db157a53ed7c0aa9d8e704f735743852 = L.circleMarker(
+                [58.38084898931001, 26.724448109815356],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.141765924679168, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_045e7acaad79db915949a5aebfc76d49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f0f003006f6435ddc38ec9816791236 = $(`<div id="html_1f0f003006f6435ddc38ec9816791236" style="width: 100.0%; height: 100.0%;"><b>Magistri</b><br>Total Trips: 713<br>Starts: 343<br>Ends: 370</div>`)[0];
+                popup_045e7acaad79db915949a5aebfc76d49.setContent(html_1f0f003006f6435ddc38ec9816791236);
+            
+        
+
+        circle_marker_db157a53ed7c0aa9d8e704f735743852.bindPopup(popup_045e7acaad79db915949a5aebfc76d49)
+        ;
+
+        
+    
+    
+            circle_marker_db157a53ed7c0aa9d8e704f735743852.bindTooltip(
+                `<div>
+                     Magistri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed68e25591ecd4d5d2a54df4a94533bd = L.circleMarker(
+                [58.39325939393939, 26.742722132867133],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.567650364659475, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_3aed2c70fa5a1c6b880f4922a180f472 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2aff0cb124e66372ad71e4b1278a2d5 = $(`<div id="html_d2aff0cb124e66372ad71e4b1278a2d5" style="width: 100.0%; height: 100.0%;"><b>Metallica parkla</b><br>Total Trips: 324<br>Starts: 143<br>Ends: 181</div>`)[0];
+                popup_3aed2c70fa5a1c6b880f4922a180f472.setContent(html_d2aff0cb124e66372ad71e4b1278a2d5);
+            
+        
+
+        circle_marker_ed68e25591ecd4d5d2a54df4a94533bd.bindPopup(popup_3aed2c70fa5a1c6b880f4922a180f472)
+        ;
+
+        
+    
+    
+            circle_marker_ed68e25591ecd4d5d2a54df4a94533bd.bindTooltip(
+                `<div>
+                     Metallica parkla
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_02059626466aebd06461b7fc8bd272ec = L.circleMarker(
+                [58.372527963737795, 26.779634023709903],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.262452978966282, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_d3682654d3032c7916ac0d79b9a680cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d268114aae670dee14b7df0df729a1b = $(`<div id="html_3d268114aae670dee14b7df0df729a1b" style="width: 100.0%; height: 100.0%;"><b>Mõisavahe</b><br>Total Trips: 459<br>Starts: 239<br>Ends: 220</div>`)[0];
+                popup_d3682654d3032c7916ac0d79b9a680cb.setContent(html_3d268114aae670dee14b7df0df729a1b);
+            
+        
+
+        circle_marker_02059626466aebd06461b7fc8bd272ec.bindPopup(popup_d3682654d3032c7916ac0d79b9a680cb)
+        ;
+
+        
+    
+    
+            circle_marker_02059626466aebd06461b7fc8bd272ec.bindTooltip(
+                `<div>
+                     Mõisavahe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c2d5ac75a55d009cc463fec70ff2ffb = L.circleMarker(
+                [58.37902871848739, 26.70882820028011],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.388810782209344, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_b3725f47e0762194172560e1475d143d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45b85f3d52b3ec08de562870d0b352c1 = $(`<div id="html_45b85f3d52b3ec08de562870d0b352c1" style="width: 100.0%; height: 100.0%;"><b>Näituse</b><br>Total Trips: 489<br>Starts: 238<br>Ends: 251</div>`)[0];
+                popup_b3725f47e0762194172560e1475d143d.setContent(html_45b85f3d52b3ec08de562870d0b352c1);
+            
+        
+
+        circle_marker_4c2d5ac75a55d009cc463fec70ff2ffb.bindPopup(popup_b3725f47e0762194172560e1475d143d)
+        ;
+
+        
+    
+    
+            circle_marker_4c2d5ac75a55d009cc463fec70ff2ffb.bindTooltip(
+                `<div>
+                     Näituse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d4bdf59bfe63c11f183209ff5facbee = L.circleMarker(
+                [58.3913543875502, 26.730165853413656],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.005580091831247, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_c9416a5b1d4f964188c88915ca582827 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d84fe23626e496bdd3c96de4bc832113 = $(`<div id="html_d84fe23626e496bdd3c96de4bc832113" style="width: 100.0%; height: 100.0%;"><b>Orava</b><br>Total Trips: 666<br>Starts: 332<br>Ends: 334</div>`)[0];
+                popup_c9416a5b1d4f964188c88915ca582827.setContent(html_d84fe23626e496bdd3c96de4bc832113);
+            
+        
+
+        circle_marker_4d4bdf59bfe63c11f183209ff5facbee.bindPopup(popup_c9416a5b1d4f964188c88915ca582827)
+        ;
+
+        
+    
+    
+            circle_marker_4d4bdf59bfe63c11f183209ff5facbee.bindTooltip(
+                `<div>
+                     Orava
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_06ec332d27cb6337b2cb4dc167cfc455 = L.circleMarker(
+                [58.37838742424242, 26.744996812770562],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.865880185478359, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_fd092827dffca56f26e1ec31a665c37d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d85611bce68c61bae61dea639f22d737 = $(`<div id="html_d85611bce68c61bae61dea639f22d737" style="width: 100.0%; height: 100.0%;"><b>Papli</b><br>Total Trips: 621<br>Starts: 308<br>Ends: 313</div>`)[0];
+                popup_fd092827dffca56f26e1ec31a665c37d.setContent(html_d85611bce68c61bae61dea639f22d737);
+            
+        
+
+        circle_marker_06ec332d27cb6337b2cb4dc167cfc455.bindPopup(popup_fd092827dffca56f26e1ec31a665c37d)
+        ;
+
+        
+    
+    
+            circle_marker_06ec332d27cb6337b2cb4dc167cfc455.bindTooltip(
+                `<div>
+                     Papli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f742cf4c9144df910107e7ad8b471d2 = L.circleMarker(
+                [58.37102059782608, 26.727295012077295],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.616196883019061, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_d43ad45860332bdeded6caafeacb0919 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e02cf1920648449e0e03e6730d0056f = $(`<div id="html_2e02cf1920648449e0e03e6730d0056f" style="width: 100.0%; height: 100.0%;"><b>Pargi</b><br>Total Trips: 548<br>Starts: 276<br>Ends: 272</div>`)[0];
+                popup_d43ad45860332bdeded6caafeacb0919.setContent(html_2e02cf1920648449e0e03e6730d0056f);
+            
+        
+
+        circle_marker_8f742cf4c9144df910107e7ad8b471d2.bindPopup(popup_d43ad45860332bdeded6caafeacb0919)
+        ;
+
+        
+    
+    
+            circle_marker_8f742cf4c9144df910107e7ad8b471d2.bindTooltip(
+                `<div>
+                     Pargi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f30b4b03ffc3bd83d1e7bdbfa42c76b9 = L.circleMarker(
+                [58.38013413281754, 26.72107040941328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.926379971740475, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_0825d74d6b450032df8993b010055290 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56081ed27ee6320352bb47319345f814 = $(`<div id="html_56081ed27ee6320352bb47319345f814" style="width: 100.0%; height: 100.0%;"><b>Pirogovi plats</b><br>Total Trips: 1,056<br>Starts: 517<br>Ends: 539</div>`)[0];
+                popup_0825d74d6b450032df8993b010055290.setContent(html_56081ed27ee6320352bb47319345f814);
+            
+        
+
+        circle_marker_f30b4b03ffc3bd83d1e7bdbfa42c76b9.bindPopup(popup_0825d74d6b450032df8993b010055290)
+        ;
+
+        
+    
+    
+            circle_marker_f30b4b03ffc3bd83d1e7bdbfa42c76b9.bindTooltip(
+                `<div>
+                     Pirogovi plats
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_580377650985b54ffd60bb8318b4b171 = L.circleMarker(
+                [58.3456833992467, 26.71446876647834],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.772208062900312, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_8a00d11a8ec292c19c2386fe26d4fa87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ba29f0ce9ad5c429ecf3af2b91566cc = $(`<div id="html_5ba29f0ce9ad5c429ecf3af2b91566cc" style="width: 100.0%; height: 100.0%;"><b>Postimaja</b><br>Total Trips: 359<br>Starts: 177<br>Ends: 182</div>`)[0];
+                popup_8a00d11a8ec292c19c2386fe26d4fa87.setContent(html_5ba29f0ce9ad5c429ecf3af2b91566cc);
+            
+        
+
+        circle_marker_580377650985b54ffd60bb8318b4b171.bindPopup(popup_8a00d11a8ec292c19c2386fe26d4fa87)
+        ;
+
+        
+    
+    
+            circle_marker_580377650985b54ffd60bb8318b4b171.bindTooltip(
+                `<div>
+                     Postimaja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_718fcc96a8c523446919773758ec527a = L.circleMarker(
+                [58.383172095238095, 26.755575645502645],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.922936352707435, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_4f6d22de4f2c70a1870873a0b0a70e3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78726af3db64a3ce753f73d75a26cf25 = $(`<div id="html_78726af3db64a3ce753f73d75a26cf25" style="width: 100.0%; height: 100.0%;"><b>Põhja puiestee</b><br>Total Trips: 639<br>Starts: 315<br>Ends: 324</div>`)[0];
+                popup_4f6d22de4f2c70a1870873a0b0a70e3c.setContent(html_78726af3db64a3ce753f73d75a26cf25);
+            
+        
+
+        circle_marker_718fcc96a8c523446919773758ec527a.bindPopup(popup_4f6d22de4f2c70a1870873a0b0a70e3c)
+        ;
+
+        
+    
+    
+            circle_marker_718fcc96a8c523446919773758ec527a.bindTooltip(
+                `<div>
+                     Põhja puiestee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e9867466e53315a647d78e58b1d3acf2 = L.circleMarker(
+                [58.39933793372319, 26.712577582846002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.640165860704723, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_d10eccb4ded70b2e500e7d5c28468740 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0b51fbd42284394bfa6368a686a5a83 = $(`<div id="html_b0b51fbd42284394bfa6368a686a5a83" style="width: 100.0%; height: 100.0%;"><b>Põllu</b><br>Total Trips: 336<br>Starts: 171<br>Ends: 165</div>`)[0];
+                popup_d10eccb4ded70b2e500e7d5c28468740.setContent(html_b0b51fbd42284394bfa6368a686a5a83);
+            
+        
+
+        circle_marker_e9867466e53315a647d78e58b1d3acf2.bindPopup(popup_d10eccb4ded70b2e500e7d5c28468740)
+        ;
+
+        
+    
+    
+            circle_marker_e9867466e53315a647d78e58b1d3acf2.bindTooltip(
+                `<div>
+                     Põllu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ea61b91aba515815e8db1c02ca8019e = L.circleMarker(
+                [58.38244349502487, 26.732318065920396],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.608897604843962, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_d729cb633770afd7d049c21fcff3a425 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa37522f90661c0e76d0175da8d0e6c4 = $(`<div id="html_aa37522f90661c0e76d0175da8d0e6c4" style="width: 100.0%; height: 100.0%;"><b>Raatuse</b><br>Total Trips: 546<br>Starts: 268<br>Ends: 278</div>`)[0];
+                popup_d729cb633770afd7d049c21fcff3a425.setContent(html_aa37522f90661c0e76d0175da8d0e6c4);
+            
+        
+
+        circle_marker_2ea61b91aba515815e8db1c02ca8019e.bindPopup(popup_d729cb633770afd7d049c21fcff3a425)
+        ;
+
+        
+    
+    
+            circle_marker_2ea61b91aba515815e8db1c02ca8019e.bindTooltip(
+                `<div>
+                     Raatuse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b82ef66e6d2ef40dd9357dcd8086bd03 = L.circleMarker(
+                [58.383508026620376, 26.736865480324074],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.722604955145991, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_255869c0fa067e6c1ad63230939b8cb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aeab724280ff9c9ea7c37dcb7e3308d4 = $(`<div id="html_aeab724280ff9c9ea7c37dcb7e3308d4" style="width: 100.0%; height: 100.0%;"><b>Raatuse kool</b><br>Total Trips: 578<br>Starts: 288<br>Ends: 290</div>`)[0];
+                popup_255869c0fa067e6c1ad63230939b8cb2.setContent(html_aeab724280ff9c9ea7c37dcb7e3308d4);
+            
+        
+
+        circle_marker_b82ef66e6d2ef40dd9357dcd8086bd03.bindPopup(popup_255869c0fa067e6c1ad63230939b8cb2)
+        ;
+
+        
+    
+    
+            circle_marker_b82ef66e6d2ef40dd9357dcd8086bd03.bindTooltip(
+                `<div>
+                     Raatuse kool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6633522174389b838d8c9bd7ad8c9358 = L.circleMarker(
+                [58.35758106725146, 26.721798888888888],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.082059998379806, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_337b960bb8674e9275c3471d0aef1913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4cebb67ab48ad0aaed3f660226a8873 = $(`<div id="html_b4cebb67ab48ad0aaed3f660226a8873" style="width: 100.0%; height: 100.0%;"><b>Rahu</b><br>Total Trips: 692<br>Starts: 342<br>Ends: 350</div>`)[0];
+                popup_337b960bb8674e9275c3471d0aef1913.setContent(html_b4cebb67ab48ad0aaed3f660226a8873);
+            
+        
+
+        circle_marker_6633522174389b838d8c9bd7ad8c9358.bindPopup(popup_337b960bb8674e9275c3471d0aef1913)
+        ;
+
+        
+    
+    
+            circle_marker_6633522174389b838d8c9bd7ad8c9358.bindTooltip(
+                `<div>
+                     Rahu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_462d0095688e2c3b16fd79b49bb3eb52 = L.circleMarker(
+                [58.36184929936306, 26.690599787685777],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.561487031584658, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_0215c1cca4c0eabb410e8df835d26da5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11058f4135e5f10413866502cc9aa344 = $(`<div id="html_11058f4135e5f10413866502cc9aa344" style="width: 100.0%; height: 100.0%;"><b>Raja</b><br>Total Trips: 323<br>Starts: 157<br>Ends: 166</div>`)[0];
+                popup_0215c1cca4c0eabb410e8df835d26da5.setContent(html_11058f4135e5f10413866502cc9aa344);
+            
+        
+
+        circle_marker_462d0095688e2c3b16fd79b49bb3eb52.bindPopup(popup_0215c1cca4c0eabb410e8df835d26da5)
+        ;
+
+        
+    
+    
+            circle_marker_462d0095688e2c3b16fd79b49bb3eb52.bindTooltip(
+                `<div>
+                     Raja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08a4493b2cb2bc5204b7f0b55c658dd3 = L.circleMarker(
+                [58.37440837096774, 26.707477430107527],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.910397126680245, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_761b748f043fc49cc041663dad7c9bfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b1f6197155907e3124566d4a27665cc = $(`<div id="html_8b1f6197155907e3124566d4a27665cc" style="width: 100.0%; height: 100.0%;"><b>Raudteejaam</b><br>Total Trips: 635<br>Starts: 310<br>Ends: 325</div>`)[0];
+                popup_761b748f043fc49cc041663dad7c9bfd.setContent(html_8b1f6197155907e3124566d4a27665cc);
+            
+        
+
+        circle_marker_08a4493b2cb2bc5204b7f0b55c658dd3.bindPopup(popup_761b748f043fc49cc041663dad7c9bfd)
+        ;
+
+        
+    
+    
+            circle_marker_08a4493b2cb2bc5204b7f0b55c658dd3.bindTooltip(
+                `<div>
+                     Raudteejaam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b8d10fcce70bdecfaadac5b469c8d4f = L.circleMarker(
+                [58.374066746031744, 26.722301780045353],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.7804813341307, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_dafb1e8a5602b21062aac5c5d70cfb31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_413488cdbda648bcacf0fde63e55799d = $(`<div id="html_413488cdbda648bcacf0fde63e55799d" style="width: 100.0%; height: 100.0%;"><b>Riiamäe</b><br>Total Trips: 595<br>Starts: 295<br>Ends: 300</div>`)[0];
+                popup_dafb1e8a5602b21062aac5c5d70cfb31.setContent(html_413488cdbda648bcacf0fde63e55799d);
+            
+        
+
+        circle_marker_4b8d10fcce70bdecfaadac5b469c8d4f.bindPopup(popup_dafb1e8a5602b21062aac5c5d70cfb31)
+        ;
+
+        
+    
+    
+            circle_marker_4b8d10fcce70bdecfaadac5b469c8d4f.bindTooltip(
+                `<div>
+                     Riiamäe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_641a6518bcfb646f16a43e74a68330f4 = L.circleMarker(
+                [58.3832664539007, 26.727771835106385],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.295376747126658, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_59f0c8df6408224a3f1f965091413ff3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a30c5198fd7401a752a63dca1815ab40 = $(`<div id="html_a30c5198fd7401a752a63dca1815ab40" style="width: 100.0%; height: 100.0%;"><b>Roosi</b><br>Total Trips: 770<br>Starts: 376<br>Ends: 394</div>`)[0];
+                popup_59f0c8df6408224a3f1f965091413ff3.setContent(html_a30c5198fd7401a752a63dca1815ab40);
+            
+        
+
+        circle_marker_641a6518bcfb646f16a43e74a68330f4.bindPopup(popup_59f0c8df6408224a3f1f965091413ff3)
+        ;
+
+        
+    
+    
+            circle_marker_641a6518bcfb646f16a43e74a68330f4.bindTooltip(
+                `<div>
+                     Roosi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_661856cc8e8c7cf3d8c5d381d2702997 = L.circleMarker(
+                [58.353476287878784, 26.6848529040404],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.166992617563398, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_63cf8e98a32493d90a60a0ebd91cf622 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6be89b255f2c005020674a0da8630704 = $(`<div id="html_6be89b255f2c005020674a0da8630704" style="width: 100.0%; height: 100.0%;"><b>Ränilinn</b><br>Total Trips: 265<br>Starts: 135<br>Ends: 130</div>`)[0];
+                popup_63cf8e98a32493d90a60a0ebd91cf622.setContent(html_6be89b255f2c005020674a0da8630704);
+            
+        
+
+        circle_marker_661856cc8e8c7cf3d8c5d381d2702997.bindPopup(popup_63cf8e98a32493d90a60a0ebd91cf622)
+        ;
+
+        
+    
+    
+            circle_marker_661856cc8e8c7cf3d8c5d381d2702997.bindTooltip(
+                `<div>
+                     Ränilinn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e49c9bff19121e8eae3c8ff0e85c5083 = L.circleMarker(
+                [58.38264006726457, 26.72090009715994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.292658515337795, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_61dc411eccb844cce8cafd759cae90f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bf6bfc4a90c24b08110c1e5dc6fce18 = $(`<div id="html_5bf6bfc4a90c24b08110c1e5dc6fce18" style="width: 100.0%; height: 100.0%;"><b>Rüütli</b><br>Total Trips: 466<br>Starts: 223<br>Ends: 243</div>`)[0];
+                popup_61dc411eccb844cce8cafd759cae90f6.setContent(html_5bf6bfc4a90c24b08110c1e5dc6fce18);
+            
+        
+
+        circle_marker_e49c9bff19121e8eae3c8ff0e85c5083.bindPopup(popup_61dc411eccb844cce8cafd759cae90f6)
+        ;
+
+        
+    
+    
+            circle_marker_e49c9bff19121e8eae3c8ff0e85c5083.bindTooltip(
+                `<div>
+                     Rüütli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_619cba61e68477923324d04689263ccf = L.circleMarker(
+                [58.380896666666665, 26.730775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2188758248682006, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_b13d2d127555635d678b65a5b0686870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d649665b2a29ce1a67e6c2c43f67e748 = $(`<div id="html_d649665b2a29ce1a67e6c2c43f67e748" style="width: 100.0%; height: 100.0%;"><b>SPARK Demo</b><br>Total Trips: 4<br>Starts: 2<br>Ends: 2</div>`)[0];
+                popup_b13d2d127555635d678b65a5b0686870.setContent(html_d649665b2a29ce1a67e6c2c43f67e748);
+            
+        
+
+        circle_marker_619cba61e68477923324d04689263ccf.bindPopup(popup_b13d2d127555635d678b65a5b0686870)
+        ;
+
+        
+    
+    
+            circle_marker_619cba61e68477923324d04689263ccf.bindTooltip(
+                `<div>
+                     SPARK Demo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_50e7db152b8a31175dd18c878fcaea8a = L.circleMarker(
+                [58.34955526490066, 26.74069687637969],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.466682553795492, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_fd477fff80afc3ca5148625d4931275f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58872152e00cbd4e17b7ed213b93d753 = $(`<div id="html_58872152e00cbd4e17b7ed213b93d753" style="width: 100.0%; height: 100.0%;"><b>Sepa turg</b><br>Total Trips: 308<br>Starts: 151<br>Ends: 157</div>`)[0];
+                popup_fd477fff80afc3ca5148625d4931275f.setContent(html_58872152e00cbd4e17b7ed213b93d753);
+            
+        
+
+        circle_marker_50e7db152b8a31175dd18c878fcaea8a.bindPopup(popup_fd477fff80afc3ca5148625d4931275f)
+        ;
+
+        
+    
+    
+            circle_marker_50e7db152b8a31175dd18c878fcaea8a.bindTooltip(
+                `<div>
+                     Sepa turg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d0b7c6ed35f5e79f70786c68834aacc = L.circleMarker(
+                [58.37740112629399, 26.730513068322978],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.804903041636488, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_64a8403f3336946d9a614059a316de6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2efdada2dc1c4d46d44619ed879ac807 = $(`<div id="html_2efdada2dc1c4d46d44619ed879ac807" style="width: 100.0%; height: 100.0%;"><b>Soola</b><br>Total Trips: 1,639<br>Starts: 807<br>Ends: 832</div>`)[0];
+                popup_64a8403f3336946d9a614059a316de6e.setContent(html_2efdada2dc1c4d46d44619ed879ac807);
+            
+        
+
+        circle_marker_0d0b7c6ed35f5e79f70786c68834aacc.bindPopup(popup_64a8403f3336946d9a614059a316de6e)
+        ;
+
+        
+    
+    
+            circle_marker_0d0b7c6ed35f5e79f70786c68834aacc.bindTooltip(
+                `<div>
+                     Soola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_277b598a46c09ce69a10a1c63062dda1 = L.circleMarker(
+                [58.365242052980136, 26.721216986754968],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.836729871872423, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_4908fb409eaf086f393439b02b447a94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5d9e71650094d9aa64ec8d1dcd02c8f = $(`<div id="html_b5d9e71650094d9aa64ec8d1dcd02c8f" style="width: 100.0%; height: 100.0%;"><b>Sõbra</b><br>Total Trips: 612<br>Starts: 302<br>Ends: 310</div>`)[0];
+                popup_4908fb409eaf086f393439b02b447a94.setContent(html_b5d9e71650094d9aa64ec8d1dcd02c8f);
+            
+        
+
+        circle_marker_277b598a46c09ce69a10a1c63062dda1.bindPopup(popup_4908fb409eaf086f393439b02b447a94)
+        ;
+
+        
+    
+    
+            circle_marker_277b598a46c09ce69a10a1c63062dda1.bindTooltip(
+                `<div>
+                     Sõbra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bf315e08ff07419fc1217b378a6aaed6 = L.circleMarker(
+                [58.369222946554146, 26.7398852883263],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.288371268251291, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_09270e7e1966da5490be51cff7790b26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34d78f91760694214f2ab83eec53f0aa = $(`<div id="html_34d78f91760694214f2ab83eec53f0aa" style="width: 100.0%; height: 100.0%;"><b>Sõpruse sild</b><br>Total Trips: 465<br>Starts: 237<br>Ends: 228</div>`)[0];
+                popup_09270e7e1966da5490be51cff7790b26.setContent(html_34d78f91760694214f2ab83eec53f0aa);
+            
+        
+
+        circle_marker_bf315e08ff07419fc1217b378a6aaed6.bindPopup(popup_09270e7e1966da5490be51cff7790b26)
+        ;
+
+        
+    
+    
+            circle_marker_bf315e08ff07419fc1217b378a6aaed6.bindTooltip(
+                `<div>
+                     Sõpruse sild
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13402b6c44689d5bbcdd6f257607f57f = L.circleMarker(
+                [58.36443141843972, 26.690063563829785],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.494048144320972, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_110f2a2a7df7c7c0f8990587f3680476 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab8625e20e18f00704885b283a6cec0a = $(`<div id="html_ab8625e20e18f00704885b283a6cec0a" style="width: 100.0%; height: 100.0%;"><b>Tamme gümnaasium</b><br>Total Trips: 189<br>Starts: 94<br>Ends: 95</div>`)[0];
+                popup_110f2a2a7df7c7c0f8990587f3680476.setContent(html_ab8625e20e18f00704885b283a6cec0a);
+            
+        
+
+        circle_marker_13402b6c44689d5bbcdd6f257607f57f.bindPopup(popup_110f2a2a7df7c7c0f8990587f3680476)
+        ;
+
+        
+    
+    
+            circle_marker_13402b6c44689d5bbcdd6f257607f57f.bindTooltip(
+                `<div>
+                     Tamme gümnaasium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7361dd3ec1d3c0d29722b11c1c71000c = L.circleMarker(
+                [58.36370553921569, 26.706712843137257],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.646019958276817, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_8067173167e54e9b6cf925483683d2c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2c8a4a9e63d164a17b98261657b4594 = $(`<div id="html_f2c8a4a9e63d164a17b98261657b4594" style="width: 100.0%; height: 100.0%;"><b>Tamme kool</b><br>Total Trips: 204<br>Starts: 102<br>Ends: 102</div>`)[0];
+                popup_8067173167e54e9b6cf925483683d2c9.setContent(html_f2c8a4a9e63d164a17b98261657b4594);
+            
+        
+
+        circle_marker_7361dd3ec1d3c0d29722b11c1c71000c.bindPopup(popup_8067173167e54e9b6cf925483683d2c9)
+        ;
+
+        
+    
+    
+            circle_marker_7361dd3ec1d3c0d29722b11c1c71000c.bindTooltip(
+                `<div>
+                     Tamme kool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72a4a461187146433282307811a3e240 = L.circleMarker(
+                [58.354257139639635, 26.696876925675674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.400887146781374, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_dbc70c0bd1c8756f44aa0bd6b3ecb409 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b3bc5acf2d902c37d2b4e2c5324b47c = $(`<div id="html_1b3bc5acf2d902c37d2b4e2c5324b47c" style="width: 100.0%; height: 100.0%;"><b>Tamme puiestee</b><br>Total Trips: 298<br>Starts: 148<br>Ends: 150</div>`)[0];
+                popup_dbc70c0bd1c8756f44aa0bd6b3ecb409.setContent(html_1b3bc5acf2d902c37d2b4e2c5324b47c);
+            
+        
+
+        circle_marker_72a4a461187146433282307811a3e240.bindPopup(popup_dbc70c0bd1c8756f44aa0bd6b3ecb409)
+        ;
+
+        
+    
+    
+            circle_marker_72a4a461187146433282307811a3e240.bindTooltip(
+                `<div>
+                     Tamme puiestee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92fae476da767d22ef533c5419d5d733 = L.circleMarker(
+                [58.36754442528735, 26.712119521072797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.462217233709174, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_6b0202da8a035c4d8004da46a6beddf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd450c8f02e558eabfdf5fe89ab69db9 = $(`<div id="html_cd450c8f02e558eabfdf5fe89ab69db9" style="width: 100.0%; height: 100.0%;"><b>Tamme staadion</b><br>Total Trips: 186<br>Starts: 87<br>Ends: 99</div>`)[0];
+                popup_6b0202da8a035c4d8004da46a6beddf7.setContent(html_cd450c8f02e558eabfdf5fe89ab69db9);
+            
+        
+
+        circle_marker_92fae476da767d22ef533c5419d5d733.bindPopup(popup_6b0202da8a035c4d8004da46a6beddf7)
+        ;
+
+        
+    
+    
+            circle_marker_92fae476da767d22ef533c5419d5d733.bindTooltip(
+                `<div>
+                     Tamme staadion
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_04968adb10f8de0b56efe67875f1c963 = L.circleMarker(
+                [58.36455055240793, 26.73994238432483],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.147360333921291, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_9555af54f30af8426170303c68a38833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70f3df86a6c759b4d70ad589423426c0 = $(`<div id="html_70f3df86a6c759b4d70ad589423426c0" style="width: 100.0%; height: 100.0%;"><b>Tarmeko</b><br>Total Trips: 715<br>Starts: 353<br>Ends: 362</div>`)[0];
+                popup_9555af54f30af8426170303c68a38833.setContent(html_70f3df86a6c759b4d70ad589423426c0);
+            
+        
+
+        circle_marker_04968adb10f8de0b56efe67875f1c963.bindPopup(popup_9555af54f30af8426170303c68a38833)
+        ;
+
+        
+    
+    
+            circle_marker_04968adb10f8de0b56efe67875f1c963.bindTooltip(
+                `<div>
+                     Tarmeko
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c3a4239c36df5e377b8f853466b1e232 = L.circleMarker(
+                [58.38734460365853, 26.695575101626012],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.492406381080306, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_04d20b0019cf383f1b1ddedc6490e513 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17f364bedaca2d9a375de0c459c23f0a = $(`<div id="html_17f364bedaca2d9a375de0c459c23f0a" style="width: 100.0%; height: 100.0%;"><b>Torni</b><br>Total Trips: 312<br>Starts: 164<br>Ends: 148</div>`)[0];
+                popup_04d20b0019cf383f1b1ddedc6490e513.setContent(html_17f364bedaca2d9a375de0c459c23f0a);
+            
+        
+
+        circle_marker_c3a4239c36df5e377b8f853466b1e232.bindPopup(popup_04d20b0019cf383f1b1ddedc6490e513)
+        ;
+
+        
+    
+    
+            circle_marker_c3a4239c36df5e377b8f853466b1e232.bindTooltip(
+                `<div>
+                     Torni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_36b3e2e22768be397a3bfe1754e18557 = L.circleMarker(
+                [58.37134150997151, 26.694015726495724],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.94454134734295, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_48bec86b0c36f9d5a072db77b83ce209 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b1a68253fa40c74734aa33e57ae5c00 = $(`<div id="html_4b1a68253fa40c74734aa33e57ae5c00" style="width: 100.0%; height: 100.0%;"><b>Tulbi</b><br>Total Trips: 237<br>Starts: 118<br>Ends: 119</div>`)[0];
+                popup_48bec86b0c36f9d5a072db77b83ce209.setContent(html_4b1a68253fa40c74734aa33e57ae5c00);
+            
+        
+
+        circle_marker_36b3e2e22768be397a3bfe1754e18557.bindPopup(popup_48bec86b0c36f9d5a072db77b83ce209)
+        ;
+
+        
+    
+    
+            circle_marker_36b3e2e22768be397a3bfe1754e18557.bindTooltip(
+                `<div>
+                     Tulbi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c80b6dc7b57fe60ee19e47b208f11e22 = L.circleMarker(
+                [58.378425032921804, 26.74075361728395],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.399000680323356, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_f7652687ca574e3969905094a148155f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50aaa1b4ec10a979677a7d4dcf910687 = $(`<div id="html_50aaa1b4ec10a979677a7d4dcf910687" style="width: 100.0%; height: 100.0%;"><b>Turusild</b><br>Total Trips: 811<br>Starts: 405<br>Ends: 406</div>`)[0];
+                popup_f7652687ca574e3969905094a148155f.setContent(html_50aaa1b4ec10a979677a7d4dcf910687);
+            
+        
+
+        circle_marker_c80b6dc7b57fe60ee19e47b208f11e22.bindPopup(popup_f7652687ca574e3969905094a148155f)
+        ;
+
+        
+    
+    
+            circle_marker_c80b6dc7b57fe60ee19e47b208f11e22.bindTooltip(
+                `<div>
+                     Turusild
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f56ef1a2b30a34a1601f680d6ed2de8e = L.circleMarker(
+                [58.37679825396825, 26.72209014880952],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.657891235220415, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_faebf375d07259e168e685e5b6793a52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce7ddeb2a724bf5262edb0532a4e5579 = $(`<div id="html_ce7ddeb2a724bf5262edb0532a4e5579" style="width: 100.0%; height: 100.0%;"><b>TÜ raamatukogu</b><br>Total Trips: 339<br>Starts: 168<br>Ends: 171</div>`)[0];
+                popup_faebf375d07259e168e685e5b6793a52.setContent(html_ce7ddeb2a724bf5262edb0532a4e5579);
+            
+        
+
+        circle_marker_f56ef1a2b30a34a1601f680d6ed2de8e.bindPopup(popup_faebf375d07259e168e685e5b6793a52)
+        ;
+
+        
+    
+    
+            circle_marker_f56ef1a2b30a34a1601f680d6ed2de8e.bindTooltip(
+                `<div>
+                     TÜ raamatukogu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d2b9a010e77ac3d9e4762fcacb49c24 = L.circleMarker(
+                [58.38918329032258, 26.70627948387097],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.407564949312402, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_e6b71e3bdbcfde1ed103944da69327cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9d59b4990155fa28cd3f00b13229d72 = $(`<div id="html_e9d59b4990155fa28cd3f00b13229d72" style="width: 100.0%; height: 100.0%;"><b>Tähtvere spordipark</b><br>Total Trips: 299<br>Starts: 155<br>Ends: 144</div>`)[0];
+                popup_e6b71e3bdbcfde1ed103944da69327cf.setContent(html_e9d59b4990155fa28cd3f00b13229d72);
+            
+        
+
+        circle_marker_1d2b9a010e77ac3d9e4762fcacb49c24.bindPopup(popup_e6b71e3bdbcfde1ed103944da69327cf)
+        ;
+
+        
+    
+    
+            circle_marker_1d2b9a010e77ac3d9e4762fcacb49c24.bindTooltip(
+                `<div>
+                     Tähtvere spordipark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e92935baa74c69964b22d23303f69ce7 = L.circleMarker(
+                [58.347651666666664, 26.743651],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.16703787691222, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_946b0d6c51dfab67433caa065f73523d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e16733db85943139956ee28c651bbcd9 = $(`<div id="html_e16733db85943139956ee28c651bbcd9" style="width: 100.0%; height: 100.0%;"><b>Töökoda</b><br>Total Trips: 35<br>Starts: 17<br>Ends: 18</div>`)[0];
+                popup_946b0d6c51dfab67433caa065f73523d.setContent(html_e16733db85943139956ee28c651bbcd9);
+            
+        
+
+        circle_marker_e92935baa74c69964b22d23303f69ce7.bindPopup(popup_946b0d6c51dfab67433caa065f73523d)
+        ;
+
+        
+    
+    
+            circle_marker_e92935baa74c69964b22d23303f69ce7.bindTooltip(
+                `<div>
+                     Töökoda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b408c973480d475b01f663db4099250 = L.circleMarker(
+                [58.37375080590718, 26.727722700421943],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.266796085993297, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_8e0cdeed73125c80161227499716fb10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5c6319200dbf9d7087699f9c4cd4486 = $(`<div id="html_c5c6319200dbf9d7087699f9c4cd4486" style="width: 100.0%; height: 100.0%;"><b>Undetermined</b><br>Total Trips: 460<br>Starts: 398<br>Ends: 62</div>`)[0];
+                popup_8e0cdeed73125c80161227499716fb10.setContent(html_c5c6319200dbf9d7087699f9c4cd4486);
+            
+        
+
+        circle_marker_4b408c973480d475b01f663db4099250.bindPopup(popup_8e0cdeed73125c80161227499716fb10)
+        ;
+
+        
+    
+    
+            circle_marker_4b408c973480d475b01f663db4099250.bindTooltip(
+                `<div>
+                     Undetermined
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_df4e2cc0646c6f3a0eb20e99057bc69a = L.circleMarker(
+                [58.37805752834468, 26.726257450396822],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.501229465540819, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_46ae7096a5743ae9643b5628be6168e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbaa20438a5a13782a4ec59e008bb9c1 = $(`<div id="html_dbaa20438a5a13782a4ec59e008bb9c1" style="width: 100.0%; height: 100.0%;"><b>Uueturu</b><br>Total Trips: 2,322<br>Starts: 1,176<br>Ends: 1,146</div>`)[0];
+                popup_46ae7096a5743ae9643b5628be6168e1.setContent(html_dbaa20438a5a13782a4ec59e008bb9c1);
+            
+        
+
+        circle_marker_df4e2cc0646c6f3a0eb20e99057bc69a.bindPopup(popup_46ae7096a5743ae9643b5628be6168e1)
+        ;
+
+        
+    
+    
+            circle_marker_df4e2cc0646c6f3a0eb20e99057bc69a.bindTooltip(
+                `<div>
+                     Uueturu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_846171451b527c2f42bc054f43e07053 = L.circleMarker(
+                [58.38595223382046, 26.723963709116212],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.75665293658265, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_fdeb9fc35a49d2c06d9d85a1d86a7a94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f781f9cd483379180be2f9a02185c00d = $(`<div id="html_f781f9cd483379180be2f9a02185c00d" style="width: 100.0%; height: 100.0%;"><b>Vabadussild</b><br>Total Trips: 970<br>Starts: 479<br>Ends: 491</div>`)[0];
+                popup_fdeb9fc35a49d2c06d9d85a1d86a7a94.setContent(html_f781f9cd483379180be2f9a02185c00d);
+            
+        
+
+        circle_marker_846171451b527c2f42bc054f43e07053.bindPopup(popup_fdeb9fc35a49d2c06d9d85a1d86a7a94)
+        ;
+
+        
+    
+    
+            circle_marker_846171451b527c2f42bc054f43e07053.bindTooltip(
+                `<div>
+                     Vabadussild
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_46688d8e680d683eead7a2e2d9de22de = L.circleMarker(
+                [58.401570336817656, 26.722389036004646],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.763632034812197, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_bbab28265f399077fb566d1733705f27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_647485fcfadae9468e26cb359a900094 = $(`<div id="html_647485fcfadae9468e26cb359a900094" style="width: 100.0%; height: 100.0%;"><b>Vahi</b><br>Total Trips: 590<br>Starts: 287<br>Ends: 303</div>`)[0];
+                popup_bbab28265f399077fb566d1733705f27.setContent(html_647485fcfadae9468e26cb359a900094);
+            
+        
+
+        circle_marker_46688d8e680d683eead7a2e2d9de22de.bindPopup(popup_bbab28265f399077fb566d1733705f27)
+        ;
+
+        
+    
+    
+            circle_marker_46688d8e680d683eead7a2e2d9de22de.bindTooltip(
+                `<div>
+                     Vahi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b3ec176c56cc5b562d66dcb91735ec73 = L.circleMarker(
+                [58.373685606060604, 26.715342532467535],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.309716188032835, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_b98c302f1d34d2c0d4e8293536e4d5d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e2d91130c9107b5ee3469fd9dadc9b5 = $(`<div id="html_9e2d91130c9107b5ee3469fd9dadc9b5" style="width: 100.0%; height: 100.0%;"><b>Vanemuise park</b><br>Total Trips: 470<br>Starts: 231<br>Ends: 239</div>`)[0];
+                popup_b98c302f1d34d2c0d4e8293536e4d5d8.setContent(html_9e2d91130c9107b5ee3469fd9dadc9b5);
+            
+        
+
+        circle_marker_b3ec176c56cc5b562d66dcb91735ec73.bindPopup(popup_b98c302f1d34d2c0d4e8293536e4d5d8)
+        ;
+
+        
+    
+    
+            circle_marker_b3ec176c56cc5b562d66dcb91735ec73.bindTooltip(
+                `<div>
+                     Vanemuise park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65e6f85c124d6384d8d5223cbf3d7bac = L.circleMarker(
+                [58.37571578088578, 26.69698709013209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.47393391600371, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_2549ba7b94eae3709658d51061f3ae27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4952417eca4f4f45084f3f9311708e36 = $(`<div id="html_4952417eca4f4f45084f3f9311708e36" style="width: 100.0%; height: 100.0%;"><b>Veeriku</b><br>Total Trips: 842<br>Starts: 429<br>Ends: 413</div>`)[0];
+                popup_2549ba7b94eae3709658d51061f3ae27.setContent(html_4952417eca4f4f45084f3f9311708e36);
+            
+        
+
+        circle_marker_65e6f85c124d6384d8d5223cbf3d7bac.bindPopup(popup_2549ba7b94eae3709658d51061f3ae27)
+        ;
+
+        
+    
+    
+            circle_marker_65e6f85c124d6384d8d5223cbf3d7bac.bindTooltip(
+                `<div>
+                     Veeriku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4ac13d4a40879d41f4e6649d71fe01c = L.circleMarker(
+                [58.35508846938776, 26.709124421768706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.447170203904761, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_847f8e151c133bebed3e265e875cb85b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d97a33acc36bef2c6dcc355adf379364 = $(`<div id="html_d97a33acc36bef2c6dcc355adf379364" style="width: 100.0%; height: 100.0%;"><b>Viie tee rist</b><br>Total Trips: 305<br>Starts: 147<br>Ends: 158</div>`)[0];
+                popup_847f8e151c133bebed3e265e875cb85b.setContent(html_d97a33acc36bef2c6dcc355adf379364);
+            
+        
+
+        circle_marker_a4ac13d4a40879d41f4e6649d71fe01c.bindPopup(popup_847f8e151c133bebed3e265e875cb85b)
+        ;
+
+        
+    
+    
+            circle_marker_a4ac13d4a40879d41f4e6649d71fe01c.bindTooltip(
+                `<div>
+                     Viie tee rist
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab53262e8bf5bb9ccea5fbffc1b7ac18 = L.circleMarker(
+                [58.36669558730158, 26.694143777777775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.713172549344025, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_5ca0ef5451720006190f6b7baf46911f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b60ea5ba76614f717c4cb58850ed529 = $(`<div id="html_9b60ea5ba76614f717c4cb58850ed529" style="width: 100.0%; height: 100.0%;"><b>W. Ostwaldi</b><br>Total Trips: 211<br>Starts: 105<br>Ends: 106</div>`)[0];
+                popup_5ca0ef5451720006190f6b7baf46911f.setContent(html_9b60ea5ba76614f717c4cb58850ed529);
+            
+        
+
+        circle_marker_ab53262e8bf5bb9ccea5fbffc1b7ac18.bindPopup(popup_5ca0ef5451720006190f6b7baf46911f)
+        ;
+
+        
+    
+    
+            circle_marker_ab53262e8bf5bb9ccea5fbffc1b7ac18.bindTooltip(
+                `<div>
+                     W. Ostwaldi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7048b048465e5df24204c15f5e4402b = L.circleMarker(
+                [58.381157199170126, 26.727159121715076],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.380630811706295, "stroke": true, "weight": 3}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+        
+    
+        var popup_80601b17e6d785d4504b0d2bb346c105 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_099a38e1e02265258fb0b0e91836cd41 = $(`<div id="html_099a38e1e02265258fb0b0e91836cd41" style="width: 100.0%; height: 100.0%;"><b>Ülejõe park</b><br>Total Trips: 487<br>Starts: 241<br>Ends: 246</div>`)[0];
+                popup_80601b17e6d785d4504b0d2bb346c105.setContent(html_099a38e1e02265258fb0b0e91836cd41);
+            
+        
+
+        circle_marker_c7048b048465e5df24204c15f5e4402b.bindPopup(popup_80601b17e6d785d4504b0d2bb346c105)
+        ;
+
+        
+    
+    
+            circle_marker_c7048b048465e5df24204c15f5e4402b.bindTooltip(
+                `<div>
+                     Ülejõe park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_6dbf4903ffa88ef1e5b212d3d46a4e01_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_78e852d0a3b4a667ec5f2dd0c126a595,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_6dbf4903ffa88ef1e5b212d3d46a4e01 = L.control.layers(
+                layer_control_6dbf4903ffa88ef1e5b212d3d46a4e01_layers.base_layers,
+                layer_control_6dbf4903ffa88ef1e5b212d3d46a4e01_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_312171c70c0e3038d2dd9acbfd7a573d);
+
+        
+</script>
+</html>

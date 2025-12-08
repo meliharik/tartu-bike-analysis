@@ -1,6 +1,6 @@
 # Tartu Bike Data - Exploratory Data Analysis Report
 
-**Generated**: 2025-12-08 09:43:24
+**Generated**: 2025-12-08 10:02:33
 
 
 ---
@@ -353,3 +353,61 @@ Note: No weekend data available for comparison
 - Avg distance: 7.58 km (vs 2.77 normal)
 
 - Most anomalies at hour: 0:00
+
+
+## Interactive Visualizations
+
+
+### Station Map
+
+**Total Stations Mapped**: 73
+
+**Map Center**: (58.3740, 26.7253)
+
+**Total Trips Visualized**: 38,614
+
+
+
+
+### Trip Flow Map
+
+**Top Routes Visualized**: 20
+
+**Most Popular Route**: EMÜ spordihoone → EMÜ spordihoone
+
+**Most Popular Route Trips**: 6
+
+
+
+
+### GPS Density Heatmap
+
+**GPS Points Visualized**: 15,255
+
+**Sampling Rate**: 1 in 100 points
+
+**Map Center**: (58.3755, 26.7299)
+
+
+
+
+### Interactive Hourly Analysis
+
+**Peak Hour**: 17:00
+
+**Peak Hour Trips**: 1,639
+
+**Quietest Hour**: 5:00
+
+
+
+
+### Interactive Station Analysis
+
+**Top Station**: Uueturu
+
+**Top Station Starts**: 1,176
+
+**Top Station Ends**: 1,146
+
+

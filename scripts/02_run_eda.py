@@ -18,6 +18,7 @@ from analysis.temporal_analysis import run_temporal_analysis
 from analysis.spatial_analysis import run_spatial_analysis
 from analysis.statistical_analysis import run_statistical_analysis
 from analysis.ml_models import run_ml_analysis
+from analysis.interactive_viz import run_interactive_visualizations
 from analysis.utils.plotting import setup_plot_style
 from analysis.utils.reporting import MarkdownReport
 
@@ -80,6 +81,10 @@ all_results['statistical'] = statistical_results
 ml_results = run_ml_analysis(routes, report)
 all_results['ml'] = ml_results
 
+# Interactive Visualizations
+interactive_results = run_interactive_visualizations(routes, locations, report)
+all_results['interactive'] = interactive_results
+
 # Save report
 print("\n[Saving Report]")
 print("-" * 80)
@@ -99,6 +104,7 @@ print(f"  • Peak hour: {temporal_results['hourly']['peak_hour']}:00")
 print(f"  • Most popular station: {spatial_results['stations']['top_start'].index[0]}")
 print(f"  • Round trip percentage: {spatial_results['trip_types']['round_trip_pct']:.1f}%")
 print(f"  • ML models trained: {len(ml_results)} analyses")
+print(f"  • Interactive visualizations: {len(interactive_results)} maps/charts")
 
 print("\nGenerated Files:")
 print(f"  • Report: {report_path}")
